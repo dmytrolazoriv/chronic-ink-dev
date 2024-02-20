@@ -41,6 +41,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -66,10 +67,101 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "products_slider_JKBrxP": {
+      "type": "products-slider",
+      "blocks": {
+        "slide_wWAGTC": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Card.png",
+            "title": "David",
+            "description": "Uzi (@uzi.tattoo_)",
+            "price": "$ 114"
+          }
+        },
+        "slide_9LzKXg": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Card.png",
+            "title": "David",
+            "description": "Uzi (@uzi.tattoo_)",
+            "price": "$ 114"
+          }
+        },
+        "slide_YULgcb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Card.png",
+            "title": "David",
+            "description": "Uzi (@uzi.tattoo_)",
+            "price": "$ 114"
+          }
+        },
+        "slide_hAYRgV": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Card.png",
+            "title": "David",
+            "description": "Uzi (@uzi.tattoo_)",
+            "price": "$ 114"
+          }
+        },
+        "slide_HRJ64A": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Card.png",
+            "title": "David",
+            "description": "Uzi (@uzi.tattoo_)",
+            "price": "$ 114"
+          }
+        },
+        "slide_ddit8G": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Card.png",
+            "title": "David",
+            "description": "Uzi (@uzi.tattoo_)",
+            "price": "$ 114"
+          }
+        },
+        "slide_9aaXwy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Card.png",
+            "title": "David",
+            "description": "Uzi (@uzi.tattoo_)",
+            "price": "$ 114"
+          }
+        },
+        "slide_dWpDAJ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Card.png",
+            "title": "David",
+            "description": "Uzi (@uzi.tattoo_)",
+            "price": "$ 114"
+          }
+        }
+      },
+      "block_order": [
+        "slide_wWAGTC",
+        "slide_9LzKXg",
+        "slide_YULgcb",
+        "slide_hAYRgV",
+        "slide_HRJ64A",
+        "slide_ddit8G",
+        "slide_9aaXwy",
+        "slide_dWpDAJ"
+      ],
+      "settings": {
+        "title": ""
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "products_slider_JKBrxP"
   ]
 }
