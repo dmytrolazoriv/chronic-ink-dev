@@ -1,0 +1,102 @@
+{{ 'section-products-slider.css' | asset_url | stylesheet_tag }}
+
+<div class="products-slider">
+  <div class="container">
+    <div class="products-slider__top slider-top">
+      <h2 class="slider-top__title">recommendations for you</h2>
+      <a class="slider-top__link" href="#">Shop now</a>
+    </div>
+    <div class="products-slider__main slider-main">
+      <div class="slider-main__slider">
+        <div class="slider-main__wrapper swiper-wrapper">
+          {% for block in section.blocks %}
+          <div class="slider-main__slide slider-slide swiper-slide">
+              <div class="slider-slide__wrapper">
+                <div class="slider-slide__image">
+                {% if block.settings.image != blank %}
+                  {{ block.settings.image | image_url: width: 346 | image_tag }}
+                {% endif %}
+                </div>
+                <h3 class="slider-slide__title">{{ block.settings.title }}</h3>
+                <p class="slider-slide__nickname">{{ block.settings.description }}</p>
+                <p class="slider-slide__price">{{ block.settings.price }}</p>
+              </div>
+          </div>
+          {% endfor %}
+          {% comment %} <div class="slider-main__slide slider-slide swiper-slide">Slide 2</div>
+          <div class="slider-main__slide slider-slide swiper-slide">Slide 3</div>
+          <div class="slider-main__slide slider-slide swiper-slide">Slide 4</div>
+          <div class="slider-main__slide slider-slide swiper-slide">Slide 5</div>
+          <div class="slider-main__slide slider-slide swiper-slide">Slide 6</div>
+          <div class="slider-main__slide slider-slide swiper-slide">Slide 7</div>
+          <div class="slider-main__slide slider-slide swiper-slide">Slide 8</div>
+          <div class="slider-main__slide slider-slide swiper-slide">Slide 9</div> {% endcomment %}
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+    {
+      "name": "Products slider",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Slideshow"
+        }
+      ],
+      "blocks": [
+         {
+           "name": "Slide",
+           "type": "slide",
+           "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Slide image"
+            },
+            {
+              "type": "text",
+              "id": "title",
+              "label": "Slide title",
+              "default": "David"
+            },
+            {
+              "type": "text",
+              "id": "description",
+              "label": "Slide description",
+              "default": "Uzi (@uzi.tattoo_)"
+            },
+            {
+              "type": "text",
+              "id": "price",
+              "label": "Slide price",
+              "default": "$ 114"
+            }
+           ]
+         }
+      ],
+      "presets": [
+        {
+          "name": "Products slider",
+          "settings": {
+          },
+          "blocks": [
+            {
+              "type": "slide"
+            },
+            {
+              "type": "slide"
+            }
+          ]
+        }
+      ],
+      "enabled_on": {
+        "templates": ["*"]
+      }
+    }
+    {% endschema %}
+    
