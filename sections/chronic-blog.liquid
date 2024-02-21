@@ -1,0 +1,203 @@
+{{ 'section-chronic-blog.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="chronic-blog section-{{ section.id }}">
+    <div class="container">
+        <div class="chronic-blog__wrapper">
+            <div class="chronic-blog__leftside leftside-blog">
+            <div class="leftside-blog__video blog-video">
+              {%- if section.settings.video != blank -%}
+                <video class="blog-video video" autoplay loop muted>
+                  <source src="{{ section.settings.video.sources[1].url }}" type="video/mp4">
+                  <source src="{{ section.settings.video.sources[1].url }}" type="video/webm">
+                </video>
+                {%- else -%}
+                {{ 'image' | placeholder_svg_tag }}
+              {%- endif -%}
+            </div>
+              <div class="leftside-blog__inner">
+                <h3 class="leftside-blog__title">{{ section.settings.title }}</h3>
+                <a href="{{ section.settings.button_link }}" class="leftside-blog__button button button_gold">{{ section.settings.button_text }}</a>
+              </div>
+            </div>
+            <div class="chronic-blog__rightside rightside-blog">
+              {%- for block in section.blocks -%}
+                <div class="rightside-blog__item blog-item" {{ block.shopify_attributes }}>
+                    <div class="blog-item__image">
+                      {%- if block.settings.item_image != blank -%}
+                          {{ block.settings.item_image | image_url: width: 347 | image_tag }}
+                        {% else %}
+                        {{ 'image' | placeholder_svg_tag }}
+                      {%- endif -%}
+                    </div>
+                    <div class="blog-item__info">
+                      <div class="blog-item__info-inner">
+                        <h4 class="blog-item__title">{{ block.settings.item_title }}</h4>
+                        <p class="blog-item__desc">
+                          {{ block.settings.item_desc |  truncate: 105 }}
+                        </p>
+                        <a href="{{ block.settings.item_link_url }}" class="blog-item__link link">{{ block.settings.item_link_text }}</a>
+                      </div>
+                    </div>
+                </div>
+              {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+      "name": "Chronic blog",
+      "max_blocks": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "video_poster",
+          "label": "Video poster"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "From the iconic and award-winning studio, read all about it."
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "View blog"
+        },
+        {
+            "type": "header",
+            "content": "t:sections.all.padding.section_padding_heading"
+        },
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 32
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 32
+        },
+        {
+            "type": "header",
+            "content": "t:sections.all.padding.section_padding_mobile_heading"
+        },
+        {
+            "type": "range",
+            "id": "padding_top_mobile",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 24
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom_mobile",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 24
+        }
+      ],
+      "blocks": [
+         {
+           "name": "Blog item",
+           "type": "blog_item",
+           "settings": [
+             {
+               "type": "image_picker",
+               "id": "item_image",
+               "label": "Item image"
+             },
+             {
+              "type": "text",
+              "id": "item_title",
+              "label": "Item title",
+              "default": "Unlocking the Mystique of Nordic Tattoos: A Comprehensive Guide"
+            },
+            {
+              "type": "textarea",
+              "id": "item_desc",
+              "label": "Item description",
+              "default": "Welcome to my shop!"
+            },
+            {
+              "type": "url",
+              "id": "item_link_url",
+              "label": "Item button link"
+            },
+            {
+              "type": "text",
+              "id": "item_link_text",
+              "label": "Item button text",
+              "default": "Read more"
+            }
+           ]
+         }
+      ],
+      "presets": [
+        {
+          "name": "Chronic blog",
+          "settings": {
+            "title": "From the iconic and award-winning studio, read all about it."
+          },
+          "blocks": [
+            {
+              "type": "blog_item"
+            },
+            {
+              "type": "blog_item"
+            },
+            {
+              "type": "blog_item"
+            }
+          ]
+        }
+      ],
+      "enabled_on": {
+        "templates": ["*"]
+      }
+    }
+    {% endschema %}
+    

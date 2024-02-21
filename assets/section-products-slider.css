@@ -1,31 +1,3 @@
-:root {
-    --page-width: 1568px;
-    --page-width-x-paddings-mobile: 20px;
-    --page-width-x-paddings-tablet: 40px;
-    --page-width-x-paddings-desktop: 80px;
-  }
-
-  #MainContent {
-    overflow-x: hidden;
-  }
-
-  .container {
-    margin: 0 auto;
-    padding: 0 var(--page-width-x-paddings-mobile);
-    max-width: calc(var(--page-width) + (var(--page-width-x-paddings-desktop) * 2));
-}
-
-@media screen and (min-width: 480px) {
-    .container{
-      padding: 0 var(--page-width-x-paddings-tablet);
-    }
-  }
-  @media screen and (min-width: 992px) {
-    .container {
-      padding: 0 var(--page-width-x-paddings-desktop);
-    }
-  }
-
 .products-slider {
 
 }
@@ -152,7 +124,7 @@
 .swiper-scrollbar-drag {
     /* max-width: 346px; */
     height: 4px;
-    background-color: rgba(32, 65, 132, 1);
+    background-color: rgba(34, 174, 209, 1);
 }
 
 .swiper-horizontal > .swiper-scrollbar,
