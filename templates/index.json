@@ -119,7 +119,7 @@
           "type": "slide",
           "settings": {
             "slide_text": "Vancouver",
-            "highlight_slide": false
+            "highlight_slide": true
           }
         },
         "slide_LbbbcN": {
