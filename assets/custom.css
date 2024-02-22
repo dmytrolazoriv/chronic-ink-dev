@@ -51,6 +51,7 @@ img {
   linear-gradient(0deg, #FFF5E7, #FFF5E7);
   transition: all 0.3s ease 0s;
   padding: 10px 52px;
+  white-space: nowrap;
 }
 
 @media (min-width: 576px) {
@@ -105,4 +106,44 @@ img {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.slider {
+}
+
+.slider__button {
+}
+
+.slider__button_prev {
+}
+
+.slider__button_next {
+}
+
+.slider__button {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 1rem;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: 0;
+  cursor: pointer;
 }

@@ -1,0 +1,191 @@
+{{ 'section-hero-banner.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="hero-banner section-{{ section.id }}">
+    <div class="hero-banner__body">
+        <div class="hero-banner__media">
+            {%- if section.settings.image -%}
+                    {{ section.settings.image | image_url: width: 1728 | image_tag: class: 'hero-banner__image' }}
+              {% elsif section.settings.video %}
+                {{ section.settings.video.media_type }}
+                <video class="hero-banner__video video" autoplay loop muted>
+                    <source src="{{ section.settings.video.sources[1].url }}" type="video/mp4">
+                    <source src="{{ section.settings.video.sources[1].url }}" type="video/webm">
+                </video>
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag }}
+            {%- endif -%}
+            {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                    {%- when 'title' -%}
+                    <div class="hero-banner__info">
+                        <div class="hero-banner__text">
+                            <h2 class="hero-banner__title" {{ block.shopify_attributes }}>
+                                {{ block.settings.title }}
+                            </h2>
+                        {%- when 'subtitle' -%}
+                            <h3 class="hero-banner__subtitle" {{ block.shopify_attributes }}>
+                                {{ block.settings.subtitle }}
+                            </h3>
+                        </div>
+                    {%- when 'button' -%}
+                        <a href="{{ block.settings.button_link }}" class="hero-banner__button button" {{ block.shopify_attributes }}>
+                            {{ block.settings.button_text }}
+                        </a>
+                    </div>
+                {%- endcase -%}
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+      "name": "Hero banner",
+      "max_blocks": 3,
+      "settings": [
+        {
+            "type": "header",
+            "content": "t:sections.all.padding.section_padding_heading"
+        },
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 32
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 32
+        },
+        {
+            "type": "header",
+            "content": "t:sections.all.padding.section_padding_mobile_heading"
+        },
+        {
+            "type": "range",
+            "id": "padding_top_mobile",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 24
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom_mobile",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 24
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        }
+      ],
+      "blocks": [
+         {
+           "name": "Title",
+           "type": "title",
+           "settings": [
+            {
+              "type": "text",
+              "id": "title",
+              "label": "Title"
+            }
+           ]
+         },
+         {
+           "name": "Subtitle",
+           "type": "subtitle",
+           "settings": [
+            {
+              "type": "text",
+              "id": "subtitle",
+              "label": "Subtitle"
+            }
+           ]
+         },
+         {
+           "name": "Button",
+           "type": "button",
+           "settings": [
+            {
+              "type": "url",
+              "id": "button_link",
+              "label": "Button link"
+            },
+            {
+              "type": "text",
+              "id": "button_text",
+              "label": "Button text"
+            }
+           ]
+         }
+      ],
+      "presets": [
+        {
+          "name": "Hero banner",
+          "settings": {
+          },
+          "blocks": [
+            {
+              "type": "title",
+              "settings": {
+                    "title": "Canada's most Award winning tattoo studio"
+                }
+            },
+            {
+              "type": "subtitle",
+              "settings": {
+                    "subtitle": "CHRONIC INK"
+                }
+            },
+            {
+              "type": "button",
+              "settings": {
+                    "button_link": "#test-link",
+                    "button_text": "Free consultation"
+                }
+            }
+          ]
+        }
+      ],
+      "enabled_on": {
+        "templates": ["*"]
+      }
+    }
+    {% endschema %}
