@@ -40,6 +40,42 @@
         "show_text_below": false
       }
     },
+    "hero_banner_XT4Yxz": {
+      "type": "hero-banner",
+      "blocks": {
+        "title_WxFwH6": {
+          "type": "title",
+          "settings": {
+            "title": "Canada's most Award winning tattoo studio"
+          }
+        },
+        "subtitle_6XwaNf": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "CHRONIC INK"
+          }
+        },
+        "button_8UQrfF": {
+          "type": "button",
+          "settings": {
+            "button_link": "#test-link",
+            "button_text": "Free consultation"
+          }
+        }
+      },
+      "block_order": [
+        "title_WxFwH6",
+        "subtitle_6XwaNf",
+        "button_8UQrfF"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
+        "video": "shopify:\/\/files\/videos\/pexels-lisa-fotios-20027007 (Original).mp4"
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "disabled": true,
@@ -373,6 +409,7 @@
   },
   "order": [
     "image_banner",
+    "hero_banner_XT4Yxz",
     "featured_collection",
     "endless_slider_YGmpXV",
     "products_slider_JKBrxP",
