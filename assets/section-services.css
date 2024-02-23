@@ -199,14 +199,14 @@
 @media (min-width: 768px) {
     .item-services__bottom {
         display: block;
-        padding: 25px 30px;
+        padding: 25px 40px;
         margin: 0;
         height: 100%;
         width: 100vw;
-        margin-left: calc((-100vw + 100%) / 2);
+        margin-left: calc((-50vw + 100%) / 2);
         margin-right: calc((-100vw + 100%) / 2);
         transition: all 0.3s ease 0s;
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -217,10 +217,10 @@
         margin: 0;
         height: 100%;
         width: 100vw;
-        margin-left: calc((-100vw + 100%) / 2);
+        margin-left: calc((-50vw + 100%) / 2);
         margin-right: calc((-100vw + 100%) / 2);
         transition: all 0.3s ease 0s;
-        text-align: center;
+        text-align: left;
     }
 }
 
