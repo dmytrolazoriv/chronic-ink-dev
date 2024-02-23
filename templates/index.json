@@ -76,6 +76,63 @@
         "video": "shopify:\/\/files\/videos\/pexels-lisa-fotios-20027007 (Original).mp4"
       }
     },
+    "services_npPqN3": {
+      "type": "services",
+      "blocks": {
+        "item_qiMyiJ": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify:\/\/shop_images\/Service-3_ae10fbad-2dbd-440c-91c8-e2031257844e.png",
+            "item_title": "Tattoos",
+            "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, <span>we can help<\/span>",
+            "button_link": "#",
+            "button_text": "Try survey"
+          }
+        },
+        "item_dVEcXp": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify:\/\/shop_images\/Service-3_ae10fbad-2dbd-440c-91c8-e2031257844e.png",
+            "item_title": "Tattoos",
+            "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, <span>we can help<\/span>",
+            "button_link": "#",
+            "button_text": "Try survey"
+          }
+        },
+        "item_z9c4eB": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify:\/\/shop_images\/Service-3_ae10fbad-2dbd-440c-91c8-e2031257844e.png",
+            "item_title": "Tattoos",
+            "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, <span>we can help<\/span>",
+            "button_link": "#",
+            "button_text": "Try survey"
+          }
+        },
+        "item_e9RWLd": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify:\/\/shop_images\/Service-3_ae10fbad-2dbd-440c-91c8-e2031257844e.png",
+            "item_title": "Tattoos",
+            "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, <span>we can help<\/span>",
+            "button_link": "#",
+            "button_text": "Try survey"
+          }
+        }
+      },
+      "block_order": [
+        "item_qiMyiJ",
+        "item_dVEcXp",
+        "item_z9c4eB",
+        "item_e9RWLd"
+      ],
+      "settings": {
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "padding_top_mobile": 24,
+        "padding_bottom_mobile": 24
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "disabled": true,
@@ -410,6 +467,7 @@
   "order": [
     "image_banner",
     "hero_banner_XT4Yxz",
+    "services_npPqN3",
     "featured_collection",
     "endless_slider_YGmpXV",
     "products_slider_JKBrxP",
