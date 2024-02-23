@@ -34,7 +34,7 @@
       <div class="slider-main__slider">
         <div class="slider-main__wrapper swiper-wrapper">
           {%- for block in section.blocks -%}
-            <div class="slider-main__slide slider-slide swiper-slide">
+            <div class="slider-main__slide slider-slide swiper-slide" {{ block.shopify_attributes }}>
                 <div class="slider-slide__wrapper">
                   <div class="slider-slide__image">
                     {% if block.settings.image != blank %}
