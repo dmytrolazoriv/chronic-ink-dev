@@ -98,7 +98,7 @@
             "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, <span>we can help<\/span>",
             "button_link": "#",
             "button_text": "Try survey",
-            "show_location": false
+            "show_location": true
           }
         },
         "item_z9c4eB": {
