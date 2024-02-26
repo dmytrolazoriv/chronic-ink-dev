@@ -154,6 +154,9 @@
 }
 
 .card-bottom__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #011C27;
     background: #FBFBFF;
     color: #011C27;

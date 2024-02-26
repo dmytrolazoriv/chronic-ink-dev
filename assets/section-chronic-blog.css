@@ -110,6 +110,9 @@
 }
 
 .leftside-blog__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: fit-content;
 }
 
