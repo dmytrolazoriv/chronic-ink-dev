@@ -86,7 +86,8 @@
             "item_title": "Tattoos",
             "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, <span>we can help<\/span>",
             "button_link": "#",
-            "button_text": "Try survey"
+            "button_text": "Try survey",
+            "show_location": false
           }
         },
         "item_dVEcXp": {
@@ -96,7 +97,8 @@
             "item_title": "Tattoos",
             "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, <span>we can help<\/span>",
             "button_link": "#",
-            "button_text": "Try survey"
+            "button_text": "Try survey",
+            "show_location": false
           }
         },
         "item_z9c4eB": {
@@ -106,7 +108,8 @@
             "item_title": "Tattoos",
             "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, <span>we can help<\/span>",
             "button_link": "#",
-            "button_text": "Try survey"
+            "button_text": "Try survey",
+            "show_location": false
           }
         },
         "item_e9RWLd": {
@@ -116,7 +119,8 @@
             "item_title": "Tattoos",
             "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, <span>we can help<\/span>",
             "button_link": "#",
-            "button_text": "Try survey"
+            "button_text": "Try survey",
+            "show_location": false
           }
         }
       },
@@ -462,6 +466,76 @@
         "padding_top_mobile": 24,
         "padding_bottom_mobile": 24
       }
+    },
+    "testimonials_GcTYhJ": {
+      "type": "testimonials",
+      "blocks": {
+        "card_Hr4yHh": {
+          "type": "card",
+          "settings": {
+            "card_top_title": "Markham",
+            "card_top_number_rating": 4.6,
+            "card_top_total_reviews": 1282,
+            "card_image": "shopify:\/\/shop_images\/Ellipse_12.png",
+            "card_middle_title": "The Godfreys",
+            "card_middle_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10\/10 will be back for more tattoos here!",
+            "card_button_link": "#testlink",
+            "card_button_text": "More reviews"
+          }
+        },
+        "card_8ftPJe": {
+          "type": "card",
+          "settings": {
+            "card_top_title": "Markham",
+            "card_top_number_rating": 4.6,
+            "card_top_total_reviews": 1282,
+            "card_image": "shopify:\/\/shop_images\/Ellipse_12.png",
+            "card_middle_title": "The Godfreys",
+            "card_middle_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10\/10 will be back for more tattoos here!",
+            "card_button_link": "#testlink",
+            "card_button_text": "More reviews"
+          }
+        },
+        "card_T4GPX9": {
+          "type": "card",
+          "settings": {
+            "card_top_title": "Markham",
+            "card_top_number_rating": 4.6,
+            "card_top_total_reviews": 1282,
+            "card_image": "shopify:\/\/shop_images\/Ellipse_12.png",
+            "card_middle_title": "The Godfreysy",
+            "card_middle_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10\/10 will be back for more tattoos here!",
+            "card_button_link": "#testlink",
+            "card_button_text": "More reviews"
+          }
+        },
+        "card_7QbXQb": {
+          "type": "card",
+          "settings": {
+            "card_top_title": "Markham",
+            "card_top_number_rating": 4.6,
+            "card_top_total_reviews": 1282,
+            "card_image": "shopify:\/\/shop_images\/Ellipse_12.png",
+            "card_middle_title": "The Godfreys",
+            "card_middle_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10\/10 will be back for more tattoos here!",
+            "card_button_link": "#testlink",
+            "card_button_text": "More reviews"
+          }
+        }
+      },
+      "block_order": [
+        "card_Hr4yHh",
+        "card_8ftPJe",
+        "card_T4GPX9",
+        "card_7QbXQb"
+      ],
+      "settings": {
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50,
+        "title": "Testimonials"
+      }
     }
   },
   "order": [
@@ -471,6 +545,7 @@
     "featured_collection",
     "endless_slider_YGmpXV",
     "products_slider_JKBrxP",
-    "chronic_blog_KVA9VY"
+    "chronic_blog_KVA9VY",
+    "testimonials_GcTYhJ"
   ]
 }
