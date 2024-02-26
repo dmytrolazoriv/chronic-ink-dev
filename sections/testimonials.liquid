@@ -1,0 +1,242 @@
+{{ 'section-testimonials.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="testimonials section-{{ section.id }}">
+    <div class="testimonials__container container">
+        <h2 class="testimonials__title">{{ section.settings.title }}</h2>
+            <div class="testimonials__cards">
+            {%- for block in section.blocks -%}
+                <div class="testimonials__card card-testimonials" {{ block.shopify_attributes }}>
+                    <div class="card-testimonials__top card-top">
+                        <p class="card-top__title">{{ block.settings.card_top_title }}</p>
+                        <div class="card-top__info">
+                            <div class="card-top__number-rating">{{ block.settings.card_top_number_rating }}</div>
+                            <div class="card-top__icon-rating">
+                                {% for i in (1..5) %}
+                                    {% render 'icon-star' %}
+                                {% endfor %}
+                            </div>
+                            <div class="card-top__total-reviews">({{ block.settings.card_top_total_reviews }})</div>
+                        </div>
+                    </div>
+
+                    <div class="card-testimonials__middle card-middle">
+                        <div class="card-middle__head">
+                            {%- if block.settings.card_image != blank -%}
+                                <div class="card-middle__avatar">
+                                    {{ block.settings.card_image | image_url: width: 50 | image_tag }}
+                                </div>
+                            {%- endif -%}
+                            <div class="card-middle__info">
+                                <div class="card-middle__title">
+                                    {{ block.settings.card_middle_title }}
+                                </div>
+                                <div class="card-middle__rating">
+                                    {% for i in (1..5) %}
+                                        {% render 'icon-star' %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-middle__body">
+                            {{ block.settings.card_middle_text |  truncatewords: 19 }}
+                        </div>
+                    </div>
+
+                    <div class="card-testimonials__bottom card-bottom">
+                        <a href="{{ block.settings.card_button_link }}" class="card-bottom__button button">
+                            {{ block.settings.card_button_text }}
+                        </a>
+                    </div>
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+      "name": "Testimonials",
+      "max_blocks": 4,
+      "settings": [
+        {
+            "type": "header",
+            "content": "t:sections.all.padding.section_padding_heading"
+        },
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 32
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 32
+        },
+        {
+            "type": "header",
+            "content": "t:sections.all.padding.section_padding_mobile_heading"
+        },
+        {
+            "type": "range",
+            "id": "padding_top_mobile",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 24
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom_mobile",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 24
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ],
+      "blocks": [
+         {
+           "name": "Card",
+           "type": "card",
+           "settings": [
+            {
+              "type": "text",
+              "id": "card_top_title",
+              "label": "Card title"
+            },
+            {
+              "type": "number",
+              "id": "card_top_number_rating",
+              "label": "Card number rating",
+              "default": 5
+            },
+            {
+              "type": "number",
+              "id": "card_top_total_reviews",
+              "label": "Card total reviews",
+              "default": 1282
+            },
+            {
+              "type": "image_picker",
+              "id": "card_image",
+              "label": "Card image"
+            },
+            {
+              "type": "text",
+              "id": "card_middle_title",
+              "label": "Card middle title"
+            },
+            {
+              "type": "textarea",
+              "id": "card_middle_text",
+              "label": "Card middle text",
+              "default": "Welcome to my shop!"
+            },
+            {
+              "type": "url",
+              "id": "card_button_link",
+              "label": "Card button link"
+            },
+            {
+              "type": "text",
+              "id": "card_button_text",
+              "label": "Card button text"
+            }
+           ]
+         }
+      ],
+      "presets": [
+        {
+          "name": "Testimonials",
+          "settings": {
+            "title": "Testimonials"
+          },
+          "blocks": [
+            {
+              "type": "card",
+              "settings": {
+                    "card_top_title": "Markham",
+                    "card_top_number_rating": 4.6,
+                    "card_top_total_reviews": 1282,
+                    "card_middle_title": "The Godfreys",
+                    "card_middle_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10/10 will be back for more tattoos here!",
+                    "card_button_link": "#testlink",
+                    "card_button_text": "More reviews"
+                }
+            },
+            {
+              "type": "card",
+              "settings": {
+                    "card_top_title": "Markham",
+                    "card_top_number_rating": 4.6,
+                    "card_top_total_reviews": 1282,
+                    "card_middle_title": "The Godfreys",
+                    "card_middle_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10/10 will be back for more tattoos here!",
+                    "card_button_link": "#testlink",
+                    "card_button_text": "More reviews"
+                }
+            },
+            {
+              "type": "card",
+              "settings": {
+                    "card_top_title": "Markham",
+                    "card_top_number_rating": 4.6,
+                    "card_top_total_reviews": 1282,
+                    "card_middle_title": "The Godfreysy",
+                    "card_middle_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10/10 will be back for more tattoos here!",
+                    "card_button_link": "#testlink",
+                    "card_button_text": "More reviews"
+                }
+            },
+            {
+              "type": "card",
+              "settings": {
+                    "card_top_title": "Markham",
+                    "card_top_number_rating": 4.6,
+                    "card_top_total_reviews": 1282,
+                    "card_middle_title": "The Godfreys",
+                    "card_middle_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10/10 will be back for more tattoos here!",
+                    "card_button_link": "#testlink",
+                    "card_button_text": "More reviews"
+                }
+            }
+          ]
+        }
+      ],
+      "enabled_on": {
+        "templates": ["*"]
+      }
+    }
+    {% endschema %}

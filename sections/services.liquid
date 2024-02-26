@@ -1,4 +1,5 @@
 {{ 'section-services.css' | asset_url | stylesheet_tag }}
+{{ 'component-itc-custom-select.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }} {
@@ -22,6 +23,14 @@
     {%- endfor -%}
 </style>
 
+{% assign selectedBlockIndex = 0 %} {%- comment -%} Default to the first block {% endcomment -%}
+{% for block in section.blocks %}
+  {% if block.settings.show_location %}
+    {% assign selectedBlockIndex = forloop.index %} {%- comment -%} Update the selected block index {% endcomment -%}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
 <div class="services section-{{ section.id }}">
     <div class="services__items">
       {%- for block in section.blocks -%}
@@ -34,7 +43,29 @@
             <p class="item-services__desc">
               {{ block.settings.item_desc }}
             </p>
+
+            {%- if forloop.index == selectedBlockIndex -%}
+                <!-- Изначально не активна ни одна опция -->
+              <div class="itc-select" id="select-{{ forloop.index }}" data-select-index="{{ forloop.index }}">
+                <!-- Кнопка для открытия выпадающего списка -->
+                <button type="button" class="itc-select__toggle" name="car" value="" data-select="toggle" data-index="-1">
+                  Select location
+                </button>
+                <!-- Выпадающий список -->
+                <div class="itc-select__dropdown">
+                  <ul class="itc-select__options">
+                    <li class="itc-select__option" data-select="option" data-value="location" data-index="{{ forloop.index0 }}">Location 1</li>
+                    <li class="itc-select__option" data-select="option" data-value="location" data-index="{{ forloop.index0 }}">Location 2</li>
+                    <li class="itc-select__option" data-select="option" data-value="location" data-index="{{ forloop.index0 }}">Location 3</li>
+                    <li class="itc-select__option" data-select="option" data-value="location" data-index="{{ forloop.index0 }}">Location 4</li>
+                    <li class="itc-select__option" data-select="option" data-value="location" data-index="{{ forloop.index0 }}">Location 5</li>
+                  </ul>
+                </div>
+              </div>
+          {%- endif -%}
           </div>
+
+
           <div class="item-services__bottom">
             <a class="item-services__link" href="{{ block.settings.button_link }}">
               {{ block.settings.button_text }}
@@ -128,6 +159,12 @@
               "type": "text",
               "id": "button_text",
               "label": "Button text"
+            },
+            {
+              "type": "checkbox",
+              "id": "show_location",
+              "label": "Show location selector",
+              "default": false
             }
            ]
          }
@@ -144,7 +181,8 @@
                     "item_title": "Tattoos",
                     "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, we can help",
                     "button_link": "#test",
-                    "button_text": "Try survey"
+                    "button_text": "Try survey",
+                    "show_location": false
                 }
             },
             {
@@ -153,7 +191,8 @@
                     "item_title": "Tattoos",
                     "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, we can help",
                     "button_link": "#test",
-                    "button_text": "Try survey"
+                    "button_text": "Try survey",
+                    "show_location": true
                 }
             },
             {
@@ -162,7 +201,8 @@
                     "item_title": "Tattoos",
                     "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, we can help",
                     "button_link": "#test",
-                    "button_text": "Try survey"
+                    "button_text": "Try survey",
+                    "show_location": false
                 }
             },
             {
@@ -171,7 +211,8 @@
                     "item_title": "Tattoos",
                     "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, we can help</p>",
                     "button_link": "#test",
-                    "button_text": "Try survey"
+                    "button_text": "Try survey",
+                    "show_location": false
                 }
             }
           ]

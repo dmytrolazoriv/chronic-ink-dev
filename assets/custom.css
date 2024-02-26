@@ -42,6 +42,7 @@ img {
 }
 
 .button {
+  display: block;
   font-size: 12px;
   font-weight: 600;
   line-height: 17px;
@@ -56,6 +57,7 @@ img {
 
 @media (min-width: 576px) {
   .button {
+    display: block;
     padding: 10px 52px;
     font-size: 16px;
     line-height: 19px;
@@ -64,6 +66,7 @@ img {
 
 @media (min-width: 768px) {
   .button {
+    display: block;
     padding: 12px 92px;
     font-size: 18px;
     line-height: 21px;
@@ -72,6 +75,7 @@ img {
 
 @media (min-width: 992px) {
   .button {
+    display: block;
     padding: 15px 102px;
     font-size: 20px;
     line-height: 23px;
@@ -80,6 +84,7 @@ img {
 
 @media (min-width: 1200px) {
   .button {
+    display: block;
     padding: 20px 122px;
     font-size: 22px;
     line-height: 25px;

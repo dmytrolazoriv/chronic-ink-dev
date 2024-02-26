@@ -1,3 +1,5 @@
+/* @import url("itc-custom-select.css"); */
+
 .services {
     color: #FBFBFF;
 }
@@ -5,6 +7,8 @@
 .services__items {
     display: flex;
     flex-wrap: wrap;
+    border-top: 1px solid #FBFBFF;
+    border-bottom: 1px solid #FBFBFF;
 }
 
 .services__item {
@@ -26,6 +30,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 105px;
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 50%;
@@ -46,6 +51,7 @@
         flex-shrink: 0;
         flex-basis: 50%;
         padding: 20px 20px 0 20px;
+        gap: 0;
     }
 }
 
@@ -58,6 +64,7 @@
         flex-shrink: 0;
         flex-basis: 50%;
         padding: 25px 30px 0 30px;
+        gap: 0;
     }
 }
 
@@ -69,21 +76,23 @@
         flex-shrink: 0;
         flex-basis: 50%;
         padding: 30px 40px 0 40px;
+        gap: 0;
     }
 }
 
 .item-services__top {
     flex-grow: 1;
     max-width: 100%;
-    min-height: 220px;
+    min-height: unset;
+    height: 100%;
     text-align: center;
 }
 
 @media (min-width: 576px) {
     .item-services__top {
         flex-grow: 1;
-        max-width: 240px;
-        min-height: 388px;
+        max-width: 100%;
+        min-height: 318px;
         text-align: unset;
     }
 }
@@ -174,10 +183,10 @@
     display: block;
     padding: 20px;
     margin: 0;
-    height: 100%;
-    width: 100vw;
-    margin-left: calc((-100vw + 100%) / 2);
-    margin-right: calc((-100vw + 100%) / 2);
+    height: fit-content;
+    width: 50vw;
+    margin-left: calc((-50vw + 100%) / 2);
+    margin-right: calc((-50vw + 100%) / 2);
     transition: all 0.3s ease 0s;
     text-align: center;
 }
@@ -188,11 +197,11 @@
         padding: 20px;
         margin: 0;
         height: 100%;
-        width: 100vw;
-        margin-left: calc((-100vw + 100%) / 2);
-        margin-right: calc((-100vw + 100%) / 2);
+        width: 50vw;
+        margin-left: calc((-50vw + 100%) / 2);
+        margin-right: calc((-50vw + 100%) / 2);
         transition: all 0.3s ease 0s;
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -202,9 +211,9 @@
         padding: 25px 40px;
         margin: 0;
         height: 100%;
-        width: 100vw;
+        width: 50vw;
         margin-left: calc((-50vw + 100%) / 2);
-        margin-right: calc((-100vw + 100%) / 2);
+        margin-right: calc((-50vw + 100%) / 2);
         transition: all 0.3s ease 0s;
         text-align: left;
     }
@@ -216,9 +225,9 @@
         padding: 25px 40px;
         margin: 0;
         height: 100%;
-        width: 100vw;
+        width: 50vw;
         margin-left: calc((-50vw + 100%) / 2);
-        margin-right: calc((-100vw + 100%) / 2);
+        margin-right: calc((-50vw + 100%) / 2);
         transition: all 0.3s ease 0s;
         text-align: left;
     }
