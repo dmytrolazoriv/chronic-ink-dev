@@ -1,4 +1,4 @@
-{{ 'section-services.css' | asset_url | stylesheet_tag }}
+{{ 'section-services-new.css' | asset_url | stylesheet_tag }}
 {{ 'component-itc-custom-select.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
@@ -15,14 +15,6 @@
   }
 {%- endstyle -%}
 
-<style>
-    {%- for block in section.blocks -%}
-      .section-{{ section.id }} .services__item:nth-child({{ forloop.index }}) {
-        background-image: url("{{ block.settings.item_image | img_url: 'master' }}");
-      }
-    {%- endfor -%}
-</style>
-
 {% assign selectedBlockIndex = 0 %} {%- comment -%} Default to the first block {% endcomment -%}
 {% for block in section.blocks %}
   {% if block.settings.show_location %}
@@ -31,46 +23,46 @@
   {% endif %}
 {% endfor %}
 
-<div class="services section-{{ section.id }}">
-    <div class="services__items">
+<div class="services-new section-{{ section.id }}">
+    <div class="services-new__items">
       {%- for block in section.blocks -%}
   
-        <div class="services__item item-services" {{ block.shopify_attributes }}>
-          <div class="item-services__top">
-            <h3 class="item-services__title">
-              {{ block.settings.item_title }}
-            </h3>
-            <p class="item-services__desc">
-              {{ block.settings.item_desc }}
-            </p>
+        <div class="services-new__item item-services-new" {{ block.shopify_attributes }}>
 
-            {%- if forloop.index == selectedBlockIndex -%}
-                <!-- Изначально не активна ни одна опция -->
-              <div class="itc-select" id="select-{{ forloop.index }}" data-select-index="{{ forloop.index }}">
-                <!-- Кнопка для открытия выпадающего списка -->
-                <button type="button" class="itc-select__toggle" name="car" value="" data-select="toggle" data-index="-1">
-                  Select location
-                </button>
-                <!-- Выпадающий список -->
-                <div class="itc-select__dropdown">
-                  <ul class="itc-select__options">
-                    <li class="itc-select__option" data-select="option" data-value="location" data-index="{{ forloop.index0 }}">Location 1</li>
-                    <li class="itc-select__option" data-select="option" data-value="location" data-index="{{ forloop.index0 }}">Location 2</li>
-                    <li class="itc-select__option" data-select="option" data-value="location" data-index="{{ forloop.index0 }}">Location 3</li>
-                    <li class="itc-select__option" data-select="option" data-value="location" data-index="{{ forloop.index0 }}">Location 4</li>
-                    <li class="itc-select__option" data-select="option" data-value="location" data-index="{{ forloop.index0 }}">Location 5</li>
-                  </ul>
-                </div>
+        <div class="item-services-new__media">
+          {{ block.settings.item_image | image_url: width: 834 | image_tag }}
+        </div>
+
+        <div class="item-services-new__info">
+          <h3 class="item-services-new__title">
+            {{ block.settings.item_title }}
+          </h3>
+
+          {%- if forloop.index == selectedBlockIndex -%}
+              <!-- Изначально не активна ни одна опция -->
+            <div class="itc-select" id="select-{{ forloop.index }}" data-select-index="{{ forloop.index }}">
+              <!-- Кнопка для открытия выпадающего списка -->
+              <button type="button" class="itc-select__toggle" name="car" value="" data-select="toggle" data-index="-1">
+                Select location
+              </button>
+              <!-- Выпадающий список -->
+              <div class="itc-select__dropdown">
+                <ul class="itc-select__options">
+                  <li class="itc-select__option" data-select="option" data-value="location" data-index="{{ forloop.index0 }}">Location 1</li>
+                  <li class="itc-select__option" data-select="option" data-value="location" data-index="{{ forloop.index0 }}">Location 2</li>
+                  <li class="itc-select__option" data-select="option" data-value="location" data-index="{{ forloop.index0 }}">Location 3</li>
+                  <li class="itc-select__option" data-select="option" data-value="location" data-index="{{ forloop.index0 }}">Location 4</li>
+                  <li class="itc-select__option" data-select="option" data-value="location" data-index="{{ forloop.index0 }}">Location 5</li>
+                </ul>
               </div>
+            </div>
           {%- endif -%}
-          </div>
 
-
-          <div class="item-services__bottom">
-            <a class="item-services__link" href="{{ block.settings.button_link }}">
-              {{ block.settings.button_text }}
-            </a>
-          </div>
+          <a class="item-services-new__link" href="{{ block.settings.button_link }}">
+            {{ block.settings.button_text }}
+          </a>
+        </div>
+     
         </div>
       {%- endfor -%}
     </div>
@@ -78,7 +70,7 @@
 
 {% schema %}
     {
-      "name": "Services",
+      "name": "Services new",
       "max_blocks": 4,
       "settings": [
         {
@@ -146,11 +138,6 @@
               "label": "Title"
             },
             {
-              "type": "textarea",
-              "id": "item_desc",
-              "label": "Description"
-            },
-            {
               "type": "url",
               "id": "button_link",
               "label": "Button link"
@@ -171,7 +158,7 @@
       ],
       "presets": [
         {
-          "name": "Services",
+          "name": "Services new",
           "settings": {
           },
           "blocks": [
@@ -179,7 +166,6 @@
               "type": "item",
               "settings": {
                     "item_title": "Tattoos",
-                    "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, we can help",
                     "button_link": "#test",
                     "button_text": "Try survey",
                     "show_location": false
@@ -189,7 +175,6 @@
               "type": "item",
               "settings": {
                     "item_title": "Tattoos",
-                    "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, we can help",
                     "button_link": "#test",
                     "button_text": "Try survey",
                     "show_location": true
@@ -199,7 +184,6 @@
               "type": "item",
               "settings": {
                     "item_title": "Tattoos",
-                    "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, we can help",
                     "button_link": "#test",
                     "button_text": "Try survey",
                     "show_location": false
@@ -209,7 +193,6 @@
               "type": "item",
               "settings": {
                     "item_title": "Tattoos",
-                    "item_desc": "Whether you know exactly what kind of tattoo you want or just have a general idea, we can help</p>",
                     "button_link": "#test",
                     "button_text": "Try survey",
                     "show_location": false

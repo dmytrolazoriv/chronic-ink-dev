@@ -3,6 +3,9 @@
     --page-width-x-paddings-mobile: 20px;
     --page-width-x-paddings-tablet: 40px;
     --page-width-x-paddings-desktop: 80px;
+    --golden-color: #BA9560;
+    --rich-black-color: #011C27;
+    --light-gold-color: #FFF5E7;
   }
 
   #MainContent {
@@ -27,11 +30,25 @@
   }
 
 .link {
-  color: rgba(186, 149, 96, 1);
-  font-size: 18px;
+}
+
+.slider-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 27px; */
+  font-size: 20px;
   font-weight: 400;
-  line-height: 20px;
-  margin: 0;
+  line-height: 24px;
+  color: var(--rich-black-color);
+  width: fit-content;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid var(--rich-black-color);
 }
 
 img {
@@ -131,6 +148,10 @@ img {
 }
 
 .slider__button {
+}
+
+.slider__button svg path {
+  fill: #BA9560;
 }
 
 .slider__button_prev {

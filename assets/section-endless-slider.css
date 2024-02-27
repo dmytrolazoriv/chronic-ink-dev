@@ -1,5 +1,6 @@
 .endless-slider {
-    background-color: #EBECEF;
+    background-color: var(--light-gold-color);
+    color: var(--rich-black-color);
 }
 
 .endless-slider__items .swiper-wrapper {
@@ -14,8 +15,10 @@
     font-weight: 500;
     line-height: 26px;
     width: auto;
+    color: var(--golden-color);
 }
 
 .endless-slider__item_highlight {
-    color: rgb(var(--color-foreground));
+    font-size: 24px;
+    color: inherit;
 }
