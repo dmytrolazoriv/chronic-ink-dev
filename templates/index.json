@@ -536,6 +536,63 @@
         "padding_bottom_mobile": 50,
         "title": "Testimonials"
       }
+    },
+    "services_new_tqqK34": {
+      "type": "services-new",
+      "blocks": {
+        "item_9zLj4F": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify:\/\/shop_images\/Title_Tatoo_State_Default_Device_PC.png",
+            "item_title": "Tattoos",
+            "button_link": "#test",
+            "button_text": "Try survey",
+            "show_location": false
+          }
+        },
+        "item_GR7qxn": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify:\/\/shop_images\/Title_Tatoo_State_Default_Device_PC.png",
+            "item_title": "Tattoos",
+            "button_link": "#test",
+            "button_text": "Try survey",
+            "show_location": true
+          }
+        },
+        "item_pD8jzX": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify:\/\/shop_images\/Title_Tatoo_State_Default_Device_PC.png",
+            "item_title": "Tattoos",
+            "button_link": "#test",
+            "button_text": "Try survey",
+            "show_location": false
+          }
+        },
+        "item_qeBAa8": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify:\/\/shop_images\/Title_Tatoo_State_Default_Device_PC.png",
+            "item_title": "Tattoos",
+            "button_link": "#test",
+            "button_text": "Try survey",
+            "show_location": false
+          }
+        }
+      },
+      "block_order": [
+        "item_9zLj4F",
+        "item_GR7qxn",
+        "item_pD8jzX",
+        "item_qeBAa8"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 24
+      }
     }
   },
   "order": [
@@ -546,6 +603,7 @@
     "endless_slider_YGmpXV",
     "products_slider_JKBrxP",
     "chronic_blog_KVA9VY",
-    "testimonials_GcTYhJ"
+    "testimonials_GcTYhJ",
+    "services_new_tqqK34"
   ]
 }
