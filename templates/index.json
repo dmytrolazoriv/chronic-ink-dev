@@ -593,6 +593,67 @@
         "padding_top_mobile": 20,
         "padding_bottom_mobile": 24
       }
+    },
+    "team_xJfCf6": {
+      "type": "team",
+      "blocks": {
+        "card_agpWag": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/card-team.png",
+            "card_name": "Emma",
+            "card_place": "Downtown Toronto"
+          }
+        },
+        "card_VtKqXw": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/card-team.png",
+            "card_name": "Emma",
+            "card_place": "Downtown Toronto"
+          }
+        },
+        "card_tEwDQQ": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/card-team.png",
+            "card_name": "Emma",
+            "card_place": "Downtown Toronto"
+          }
+        },
+        "card_fqQN4r": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/card-team.png",
+            "card_name": "Emma",
+            "card_place": "Downtown Toronto"
+          }
+        },
+        "card_kxYKLw": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/card-team.png",
+            "card_name": "Emma",
+            "card_place": "Downtown Toronto"
+          }
+        }
+      },
+      "block_order": [
+        "card_agpWag",
+        "card_VtKqXw",
+        "card_tEwDQQ",
+        "card_fqQN4r",
+        "card_kxYKLw"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
+        "title": "our team",
+        "button_link": "#",
+        "button_text": "See all artists"
+      }
     }
   },
   "order": [
@@ -604,6 +665,7 @@
     "products_slider_JKBrxP",
     "chronic_blog_KVA9VY",
     "testimonials_GcTYhJ",
-    "services_new_tqqK34"
+    "services_new_tqqK34",
+    "team_xJfCf6"
   ]
 }
