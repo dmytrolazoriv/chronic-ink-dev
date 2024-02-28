@@ -29,9 +29,11 @@
   
         <div class="services-new__item item-services-new" {{ block.shopify_attributes }}>
 
-        <div class="item-services-new__media">
-          {{ block.settings.item_image | image_url: width: 834 | image_tag }}
-        </div>
+        {%- if block.settings.item_image != blank -%}
+          <div class="item-services-new__media">
+            {{ block.settings.item_image | image_url: width: 834 | image_tag }}
+          </div>
+        {%- endif -%}
 
         <div class="item-services-new__info">
           <h3 class="item-services-new__title">
