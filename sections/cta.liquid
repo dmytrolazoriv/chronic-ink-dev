@@ -23,13 +23,13 @@
             {% when "image" %}
         
             {%- if block.settings.image != blank -%}
-                <div class="cta__image">
+                <div class="cta__image" {{ block.shopify_attributes }}>
                     {{ block.settings.image | image_url: width: 864 | image_tag }}
                 </div>
             {%- endif -%}
 
             {% when "info" %}
-            <div class="cta__info info-cta">
+            <div class="cta__info info-cta" {{ block.shopify_attributes }}>
                 <div class="info-cta__body">
                     <h3 class="info-cta__title">
                         {{ block.settings.list_title }}
