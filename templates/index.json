@@ -105,6 +105,37 @@
         "padding_bottom_mobile": 0
       }
     },
+    "cta_QY4hpC": {
+      "type": "cta",
+      "blocks": {
+        "info_VXDB9K": {
+          "type": "info",
+          "settings": {
+            "list_title": "This is <span>you<\/span>?",
+            "item_text_1": "You have a tattoo design <br> and you <span>want a consultation<\/span> ?",
+            "item_text_2": "You have an idea and <br> <span>need an artist to draw it<\/span> ?",
+            "item_text_3": "Finding it hard to <br> <span>come up with ideas<\/span> ?",
+            "item_text_4": "You have a bunch of ideas but not sure <br>how to <span>put it all together<\/span> ?"
+          }
+        },
+        "image_9Efz8D": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_1260.png"
+          }
+        }
+      },
+      "block_order": [
+        "info_VXDB9K",
+        "image_9Efz8D"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
     "services_npPqN3": {
       "type": "services",
       "blocks": {
@@ -741,6 +772,7 @@
     "image_banner",
     "hero_banner_XT4Yxz",
     "booking_eQNVV4",
+    "cta_QY4hpC",
     "services_npPqN3",
     "featured_collection",
     "endless_slider_YGmpXV",
