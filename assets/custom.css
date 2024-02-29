@@ -8,6 +8,7 @@
     --light-gold-color: #FFF5E7;
     --ghost-white-color: #FBFBFF;
     --light-color: #EBECEF;
+    --blue-color: #22AED1;
   }
 
   #MainContent {
@@ -139,9 +140,12 @@ img {
 }
 
 .button_black:hover {
-  color: var(--rich-black-color);
-  border: 1px solid var(--rich-black-color);
+  color: var(--blue-color);
+  border-color: 1px solid var(--blue-color);
   background: var(--ghost-white-color);
+}
+
+.button_app {
 }
 
 @media (min-width: 576px) {

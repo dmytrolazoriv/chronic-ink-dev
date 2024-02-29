@@ -1,0 +1,132 @@
+.booking {
+}
+
+.booking__body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 1200px) {
+    .booking__body {
+        gap: 100px;
+    }
+}
+
+.booking__info {
+    padding: 0 0 100px 0;
+}
+
+.booking__media {
+}
+
+.info-booking {
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .info-booking {
+        text-align: left;
+    }
+}
+
+.info-booking__title {
+    color: var(--rich-black-color);
+    font-size: clamp(1.75rem, 1.1957rem + 2.3651vw, 3.75rem);
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    max-width: 450px;
+    margin: 0 0 30px 0;
+}
+
+@media (min-width: 1200px) {
+    .info-booking__title {
+        font-size: 40px;
+    }
+}
+
+.info-booking__title span {
+    color: var(--golden-color);
+}
+
+.info-booking__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+@media (min-width: 768px) {
+    .info-booking__buttons {
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .info-booking__buttons {
+        justify-content: flex-start;
+    }
+}
+
+.info-booking__button {
+    display: block;
+    text-decoration: none;
+    line-height: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.info-booking__button svg {
+    width: clamp(13.625rem, 12.7935rem + 3.5477vw, 16.625rem);
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.info-booking__button svg path {
+    transition: all 0.3s ease 0s;
+}
+
+.info-booking__button.button_app-g:hover svg path:nth-child(2) {
+    fill: var(--rich-black-color);
+}
+
+.info-booking__button.button_app-g:hover svg path:not(:nth-child(2),:nth-child(3),:nth-child(4),:nth-child(5),:nth-child(6)) {
+    fill: var(--ghost-white-color);
+}
+
+.info-booking__button.button_app-a:hover svg path:first-child {
+    fill: var(--rich-black-color);
+}
+
+.info-booking__button.button_app-a:hover svg path:not(:first-child) {
+    fill: var(--ghost-white-color);
+}
+
+/* .info-booking__button.button_app-g svg path:nth-child(2) {
+    fill: red;
+}
+
+.info-booking__button.button_app-a svg path:first-child {
+    fill: red;
+} */
+
+@media (min-width: 1200px) {
+    .info-booking__button svg {
+        width: 166px;
+    }
+}
+
+.media-booking {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .media-booking {
+        display: block;
+    }
+}
+
+.media-booking__image{
+}
