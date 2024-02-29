@@ -76,6 +76,35 @@
         "video": "shopify:\/\/files\/videos\/pexels-lisa-fotios-20027007 (Original).mp4"
       }
     },
+    "booking_eQNVV4": {
+      "type": "booking",
+      "blocks": {
+        "info_UGjpXH": {
+          "type": "info",
+          "settings": {
+            "title": "Make an appointment using Booksopen",
+            "button_link_google_play": "",
+            "button_link_app_store": ""
+          }
+        },
+        "image_JzPmeU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/phone-rendering-ios-1.png"
+          }
+        }
+      },
+      "block_order": [
+        "info_UGjpXH",
+        "image_JzPmeU"
+      ],
+      "settings": {
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 0
+      }
+    },
     "services_npPqN3": {
       "type": "services",
       "blocks": {
@@ -711,6 +740,7 @@
   "order": [
     "image_banner",
     "hero_banner_XT4Yxz",
+    "booking_eQNVV4",
     "services_npPqN3",
     "featured_collection",
     "endless_slider_YGmpXV",
