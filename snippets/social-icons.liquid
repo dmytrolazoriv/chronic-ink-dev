@@ -21,7 +21,8 @@
   {%- if settings.social_instagram_link != blank -%}
     <li class="list-social__item">
       <a href="{{ settings.social_instagram_link }}" class="link list-social__link">
-        {%- render 'icon-instagram' -%}
+        {% comment %} {%- render 'icon-instagram' -%} {% endcomment %}
+        {%- render 'icon-instagram-new' -%}
         <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
       </a>
     </li>
@@ -37,7 +38,8 @@
   {%- if settings.social_tiktok_link != blank -%}
     <li class="list-social__item">
       <a href="{{ settings.social_tiktok_link }}" class="link list-social__link">
-        {%- render 'icon-tiktok' -%}
+        {% comment %} {%- render 'icon-tiktok' -%} {% endcomment %}
+        {%- render 'icon-tiktok-new' -%}
         <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
       </a>
     </li>

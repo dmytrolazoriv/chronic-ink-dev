@@ -1,0 +1,177 @@
+{{ 'section-cta-second.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<style>
+      .cta-second.section-{{ section.id }} {
+        background-image: url("{{ section.settings.background_image | img_url: 'master' }}");
+      }
+</style>
+
+<div class="cta-second section-{{ section.id }}">
+    <div class="cta-second__container container">
+        <div class="cta-second__inner">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when "title" -%}
+                <h3 class="cta-second__title" {{ block.shopify_attributes }}>
+                  {{ block.settings.title }}
+              </h3>
+              {%- when "text" -%}
+                <p class="cta-second__text" {{ block.shopify_attributes }}>
+                  {{ block.settings.text }}
+                </p>
+                {%- when "button" -%}
+                  <a class="cta-second__button button" href="{{ block.settings.button_link }}" {{ block.shopify_attributes }}>
+                    {{ block.settings.button_text }}
+                  </a>
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+      "name": "CTA second",
+      "max_blocks": 3,
+      "settings": [
+        {
+            "type": "header",
+            "content": "t:sections.all.padding.section_padding_heading"
+        },
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 32
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 32
+        },
+        {
+            "type": "header",
+            "content": "t:sections.all.padding.section_padding_mobile_heading"
+        },
+        {
+            "type": "range",
+            "id": "padding_top_mobile",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 24
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom_mobile",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 24
+        },
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Background image"
+        }
+      ],
+      "blocks": [
+        {
+           "name": "Title",
+           "type": "title",
+           "settings": [
+            {
+              "type": "text",
+              "id": "title",
+              "label": "Title"
+            }
+           ]
+         },
+         {
+           "name": "Text",
+           "type": "text",
+           "settings": [
+            {
+              "type": "textarea",
+              "id": "text",
+              "label": "Text"
+            }
+           ]
+         },
+         {
+           "name": "Button",
+           "type": "button",
+           "settings": [
+            {
+              "type": "url",
+                "id": "button_link",
+                "label": "Button link"
+            },
+            {
+              "type": "text",
+              "id": "button_text",
+              "label": "Button text"
+            }
+           ]
+         }
+      ],
+      "presets": [
+        {
+          "name": "CTA second",
+          "settings": {
+          },
+          "blocks": [
+            {
+              "type": "title",
+              "settings": {
+                    "title": "Tell us your tattoo idea"
+                }
+            },
+            {
+              "type": "text",
+              "settings": {
+                    "text": "Fill out our quick form to book a free consultation. We will tell you the estimated price and how many sessions are needed"
+                }
+            },
+            {
+              "type": "button",
+              "settings": {
+                    "button_link": "#",
+                    "button_text": "Free consultation"
+                }
+            }
+          ]
+        }
+      ],
+      "enabled_on": {
+        "templates": ["*"]
+      }
+    }
+    {% endschema %}

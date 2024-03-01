@@ -9,6 +9,7 @@
     --ghost-white-color: #FBFBFF;
     --light-color: #EBECEF;
     --blue-color: #22AED1;
+    --grey-color: #757575;
   }
 
   #MainContent {
@@ -114,7 +115,7 @@ img {
 .button:hover {
   border: 1px solid #BA9560;
   background: #ffffff;
-  color: #BA9560;
+  color: #BA9560 !important;
 }
 
 .button::before,

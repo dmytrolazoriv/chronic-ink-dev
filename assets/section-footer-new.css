@@ -1,0 +1,221 @@
+.footer-new {
+    border-top: 1px solid var(--grey-color);
+    background-color: rgba(255, 245, 231, 0.5);
+}
+    
+.footer-new__container {
+}
+
+.footer-new__top {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 0 113px 0;
+}
+
+@media (min-width: 992px) {
+    .footer-new__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 0 113px 0;
+    }
+}
+
+.footer-new__menu-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin: 0 0 60px 0;
+}
+
+@media (min-width: 992px) {
+    .footer-new__menu-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+.footer-new__menu {
+}
+
+.top-footer .footer-block__heading {
+    color: var(--rich-black-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0 0 36px 0;
+}
+
+.top-footer .newsletter-form {
+    max-width: 100%;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .top-footer .newsletter-form {
+        max-width: 46rem;
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .top-footer .newsletter-form {
+        max-width: 36rem;
+        margin: 0;
+    }
+}
+
+.top-footer__menu {
+}
+
+.top-footer__title {
+    color: var(--rich-black-color) !important;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.top-footer__item a {
+    color: var(--rich-black-color) !important;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0;
+}
+
+.top-footer__form-button {
+    position: relative !important;
+    margin: 10px 10px 10px 0 !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: var(--ghost-white-color) !important;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.top-footer__item:not(:last-child) {
+    margin: 0 0 14px 0;
+}
+
+.top-footer__field {
+    align-items: center;
+    gap: 95px;
+    margin: 0 0 36px 0;
+    padding: 0;
+    background-color: var(--ghost-white-color) !important;
+}
+
+.top-footer__label {
+    top: unset;
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 500;
+    color: var(--grey-color);
+}
+
+.top-footer__input {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.footer-block__newsletter {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .footer-block__newsletter {
+        text-align: left;
+    }
+}
+
+.footer-new__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-footer .footer__list-social-new {
+    justify-content: center !important;
+    gap: 40px;
+}
+
+@media (min-width: 992px) {
+    .top-footer .footer__list-social-new {
+        justify-content: flex-start !important;
+    }
+}
+
+.footer__list-social-new .list-social__item .list-social__link {
+    padding: 0;
+}
+
+.footer__list-social-new .list-social__item .icon {
+    height: 2.6rem;
+    width: 2.6rem;
+}
+
+.footer__list-social-new .icon-tiktok {
+    fill: transparent;
+}
+
+.bottom-footer {
+    padding: 23px 0;
+    background-color: var(--rich-black-color);
+    color: var(--ghost-white-color);
+    width: 100vw; 
+    margin-left: calc((-100vw + 100%) / 2);
+    margin-right: calc((-100vw + 100%) / 2);
+}
+
+.bottom-footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 60px;
+}
+
+.bottom-footer__menu a {
+    color: inherit;
+}
+
+.bottom-footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 22px;
+}
+
+@media (min-width: 992px) {
+    .bottom-footer__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 0;
+    }
+}
+
+.bottom-footer__container .copyright__content,
+.bottom-footer__menu .list-menu__item {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0;
+}
+
+.bottom-footer__container .copyright__content a {
+    text-decoration: none;
+}
+
+.bottom-footer .link--text:hover {
+    color: var(--ghost-white-color);
+}
