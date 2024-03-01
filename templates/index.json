@@ -76,35 +76,6 @@
         "video": "shopify:\/\/files\/videos\/pexels-lisa-fotios-20027007 (Original).mp4"
       }
     },
-    "booking_eQNVV4": {
-      "type": "booking",
-      "blocks": {
-        "info_UGjpXH": {
-          "type": "info",
-          "settings": {
-            "title": "Make an appointment using Booksopen",
-            "button_link_google_play": "",
-            "button_link_app_store": ""
-          }
-        },
-        "image_JzPmeU": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/phone-rendering-ios-1.png"
-          }
-        }
-      },
-      "block_order": [
-        "info_UGjpXH",
-        "image_JzPmeU"
-      ],
-      "settings": {
-        "padding_top": 100,
-        "padding_bottom": 0,
-        "padding_top_mobile": 100,
-        "padding_bottom_mobile": 0
-      }
-    },
     "cta_QY4hpC": {
       "type": "cta",
       "blocks": {
@@ -766,12 +737,76 @@
         "button_link": "#",
         "button_text": "More REVIEWs ON"
       }
+    },
+    "cta_second_yFhpjW": {
+      "type": "cta-second",
+      "blocks": {
+        "title_c6PjBJ": {
+          "type": "title",
+          "settings": {
+            "title": "Tell us your tattoo idea"
+          }
+        },
+        "text_bkTEhN": {
+          "type": "text",
+          "settings": {
+            "text": "Fill out our quick form to book a free consultation. We will tell you the estimated price and how many sessions are needed"
+          }
+        },
+        "button_wcrC94": {
+          "type": "button",
+          "settings": {
+            "button_link": "#",
+            "button_text": "Free consultation"
+          }
+        }
+      },
+      "block_order": [
+        "title_c6PjBJ",
+        "text_bkTEhN",
+        "button_wcrC94"
+      ],
+      "settings": {
+        "padding_top": 200,
+        "padding_bottom": 200,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
+        "background_image": "shopify:\/\/shop_images\/call-to-action-bg.png"
+      }
+    },
+    "booking_eQNVV4": {
+      "type": "booking",
+      "blocks": {
+        "info_UGjpXH": {
+          "type": "info",
+          "settings": {
+            "title": "Make an appointment using Booksopen",
+            "button_link_google_play": "",
+            "button_link_app_store": ""
+          }
+        },
+        "image_JzPmeU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/phone-rendering-ios-1.png"
+          }
+        }
+      },
+      "block_order": [
+        "info_UGjpXH",
+        "image_JzPmeU"
+      ],
+      "settings": {
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 0
+      }
     }
   },
   "order": [
     "image_banner",
     "hero_banner_XT4Yxz",
-    "booking_eQNVV4",
     "cta_QY4hpC",
     "services_npPqN3",
     "featured_collection",
@@ -781,6 +816,8 @@
     "testimonials_GcTYhJ",
     "services_new_tqqK34",
     "team_xJfCf6",
-    "testimonials_new_LbGi99"
+    "testimonials_new_LbGi99",
+    "cta_second_yFhpjW",
+    "booking_eQNVV4"
   ]
 }
