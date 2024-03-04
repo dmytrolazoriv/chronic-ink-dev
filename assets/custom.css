@@ -10,6 +10,7 @@
     --light-color: #EBECEF;
     --blue-color: #22AED1;
     --grey-color: #757575;
+    --highlight-color: #FFCC1A;
   }
 
   #MainContent {
@@ -115,7 +116,7 @@ img {
 .button:hover {
   border: 1px solid #BA9560;
   background: #ffffff;
-  color: #BA9560 !important;
+  color: #BA9560;
 }
 
 .button::before,

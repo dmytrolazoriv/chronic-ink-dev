@@ -20,7 +20,10 @@
   endif
 %}
 
-<div class="disclosure">
+<div class="disclosure {% if custom_class %}{{ custom_class }}{% endif %}">
+  {%- if show_location_icon -%}
+    {% render 'icon-location' %}
+  {%- endif -%}
   <button
     type="button"
     class="disclosure__button localization-form__select localization-selector link link--text caption-large"

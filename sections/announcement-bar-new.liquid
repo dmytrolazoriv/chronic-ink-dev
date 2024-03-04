@@ -1,0 +1,279 @@
+{{ 'section-announcement-bar-new.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="announcement-bar-new section-{{ section.id }}">
+    <div class="announcement-bar-new__container container utility-bar utility-bar--bottom-border header-localization">
+        {%- capture announcement_message -%}
+            {%- for block in section.blocks -%}
+                  {%- if block.settings.text != blank -%}
+                    {%- if block.settings.link != blank -%}
+                      <a href="{{ block.settings.link }}" class="info__link" {{ block.shopify_attributes }}>
+                    {%- endif -%}
+                      <p class="info__message" {{ block.shopify_attributes }}>
+                        {{ block.settings.text | escape }}
+                      </p>
+                    {%- if block.settings.link != blank -%}
+                      </a>
+                    {%- endif -%}
+                  {%- endif -%}
+            {%- endfor -%}
+          {%- endcapture -%}
+          
+          <div class="announcement-bar-new__info info">
+            {{ announcement_message }}
+          </div>
+
+          {%- capture selectors -%}
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+
+            {%- when 'country_selector' -%}
+            <div class="selectors__country country-selector" {{ block.shopify_attributes }}>
+                {%- if block.settings.enable_country_selector and localization.available_countries.size > 1 -%}
+                    <noscript class="small-hide medium-hide">
+                      {%- form 'localization', id: 'AnnouncementCountryMobileFormNoScript', class: 'localization-form' -%}
+                        <div class="localization-form__select">
+                          <h2 class="visually-hidden" id="AnnouncementCountryMobileLabelNoScript">
+                            {{ 'localization.country_label' | t }}
+                          </h2>
+                          <select
+                            class="localization-selector link"
+                            name="country_code"
+                            aria-labelledby="AnnouncementCountryMobileLabelNoScript"
+                          >
+                            {%- for country in localization.available_countries -%}
+                              <option
+                                value="{{ country.iso_code }}"
+                                {%- if country.iso_code == localization.country.iso_code %}
+                                  selected
+                                {% endif %}
+                              >
+                                {{ country.name }} ({{ country.currency.iso_code }}
+                                {{ country.currency.symbol }})
+                              </option>
+                            {%- endfor -%}
+                          </select>
+                          {% render 'icon-caret' %}
+                        </div>
+                        <button class="button button--tertiary">{{ 'localization.update_country' | t }}</button>
+                      {%- endform -%}
+                    </noscript>
+                    {% comment %} <localization-form class="small-hide medium-hide no-js-hidden"> {% endcomment %}
+                    <localization-form class="no-js-hidden">
+                      {%- form 'localization', id: 'AnnouncementCountryForm', class: 'localization-form' -%}
+                        <div>
+                          <h2 class="visually-hidden" id="AnnouncementCountryLabel">{{ 'localization.country_label' | t }}</h2>
+                          {%- render 'country-localization', localPosition: 'AnnouncementCountry',show_location_icon: true, custom_class: 'country-selector__disclosure' -%}
+                        </div>
+                      {%- endform -%}
+                    </localization-form>
+                  {% endif %}
+            </div>
+
+            {%- when 'language_selector' -%}
+            <div class="language-selector" {{ block.shopify_attributes }}>
+                {%- if block.settings.enable_language_selector and localization.available_languages.size > 1 -%}
+                    <noscript class="small-hide medium-hide">
+                        {%- form 'localization', id: 'AnnouncementLanguageMobileFormNoScript', class: 'localization-form' -%}
+                        <div class="localization-form__select">
+                            <h2 class="visually-hidden" id="AnnouncementLanguageMobileLabelNoScript">
+                            {{ 'localization.language_label' | t }}
+                            </h2>
+                            <select
+                            class="localization-selector link"
+                            name="locale_code"
+                            aria-labelledby="AnnouncementLanguageMobileLabelNoScript"
+                            >
+                            {%- for language in localization.available_languages -%}
+                                <option
+                                value="{{ language.iso_code }}"
+                                lang="{{ language.iso_code }}"
+                                {%- if language.iso_code == localization.language.iso_code %}
+                                    selected
+                                {% endif %}
+                                >
+                                {{ language.endonym_name | capitalize }}
+                                </option>
+                            {%- endfor -%}
+                            </select>
+                            {% render 'icon-caret' %}
+                        </div>
+                        <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
+                        {%- endform -%}
+                    </noscript>
+            
+                    {% comment %} <localization-form class="small-hide medium-hide no-js-hidden"> {% endcomment %}
+                    <localization-form class="no-js-hidden">
+                        {%- form 'localization', id: 'AnnouncementLanguageForm', class: 'localization-form' -%}
+                        <div>
+                            <h2 class="visually-hidden" id="AnnouncementLanguageLabel">{{ 'localization.language_label' | t }}</h2>
+                            {%- render 'language-localization', localPosition: 'AnnouncementLanguage', show_globe_icon: true, custom_class: 'language-selector__disclosure' -%}
+                        </div>
+                        {%- endform -%}
+                    </localization-form>
+                {%- endif -%}
+            </div>
+
+            {%- endcase -%}
+        {%- endfor -%}
+    {%- endcapture -%}
+    <div class="announcement-bar-new__selectors selectors">
+        {{ selectors }}
+    </div>
+
+    </div>
+</div>
+
+{% schema %}
+    {
+      "name": "Announcement bar new",
+      "max_blocks": 4,
+      "class": "announcement-bar-section",
+      "enabled_on": {
+        "groups": ["header"]
+      },
+      "settings": [
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "t:sections.all.colors.label",
+          "default": "scheme-4"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_line_separator",
+          "default": true,
+          "label": "t:sections.header.settings.show_line_separator.label"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.announcement-bar.settings.header__1.content",
+          "info": "t:sections.announcement-bar.settings.header__1.info"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_social",
+          "default": false,
+          "label": "t:sections.announcement-bar.settings.show_social.label"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.announcement-bar.settings.header__2.content"
+        },
+        {
+          "type": "checkbox",
+          "id": "auto_rotate",
+          "label": "t:sections.announcement-bar.settings.auto_rotate.label",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "change_slides_speed",
+          "min": 3,
+          "max": 10,
+          "step": 1,
+          "unit": "s",
+          "label": "t:sections.announcement-bar.settings.change_slides_speed.label",
+          "default": 5
+        }
+      ],
+      "blocks": [
+        {
+          "type": "announcement",
+          "name": "t:sections.announcement-bar.blocks.announcement.name",
+          "settings": [
+            {
+              "type": "text",
+              "id": "text",
+              "default": "We are booking appointments.",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+            },
+            {
+              "type": "url",
+              "id": "link",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
+            }
+          ]
+        },
+        {
+          "type": "country_selector",
+          "name": "Country selector",
+          "settings": [
+              {
+                "type": "header",
+                "content": "t:sections.announcement-bar.settings.header__3.content",
+                "info": "t:sections.announcement-bar.settings.header__3.info"
+              },
+              {
+                "type": "checkbox",
+                "id": "enable_country_selector",
+                "default": false,
+                "label": "t:sections.announcement-bar.settings.enable_country_selector.label"
+              }
+          ]
+        },
+        {
+          "type": "language_selector",
+          "name": "Language selector",
+          "settings": [
+            {
+                "type": "header",
+                "content": "t:sections.announcement-bar.settings.header__4.content",
+                "info": "t:sections.announcement-bar.settings.header__4.info"
+            },
+            {
+                "type": "checkbox",
+                "id": "enable_language_selector",
+                "default": false,
+                "label": "t:sections.announcement-bar.settings.enable_language_selector.label"
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Announcement bar new",
+          "blocks": [
+            {
+              "type": "announcement",
+              "settings": {
+                    "text": "We are booking appointments."
+                }
+            },
+            {
+              "type": "announcement",
+              "settings": {
+                    "text": "TELL US YOUR IDEA!"
+                }
+            },
+            {
+              "type": "country_selector",
+              "settings": {
+                    "enable_country_selector": true
+                }
+            },
+            {
+              "type": "language_selector",
+              "settings": {
+                    "enable_language_selector": true
+                }
+            }
+          ]
+        }
+      ]
+    }
+    {% endschema %}
+    
