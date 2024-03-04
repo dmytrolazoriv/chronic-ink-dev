@@ -2,6 +2,50 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "announcement_bar_new_zf4Dmq": {
+      "type": "announcement-bar-new",
+      "blocks": {
+        "announcement_jnT7zX": {
+          "type": "announcement",
+          "settings": {
+            "text": "We are booking appointments.",
+            "link": ""
+          }
+        },
+        "announcement_6rqQCa": {
+          "type": "announcement",
+          "settings": {
+            "text": "TELL US YOUR IDEA!",
+            "link": "#"
+          }
+        },
+        "country_selector_Qjn9hR": {
+          "type": "country_selector",
+          "settings": {
+            "enable_country_selector": true
+          }
+        },
+        "language_selector_hbUXeP": {
+          "type": "language_selector",
+          "settings": {
+            "enable_language_selector": true
+          }
+        }
+      },
+      "block_order": [
+        "announcement_jnT7zX",
+        "announcement_6rqQCa",
+        "country_selector_Qjn9hR",
+        "language_selector_hbUXeP"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -16,6 +60,7 @@
       "block_order": [
         "announcement-bar-0"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
         "show_line_separator": true,
@@ -46,6 +91,7 @@
     }
   },
   "order": [
+    "announcement_bar_new_zf4Dmq",
     "announcement-bar",
     "header"
   ]
