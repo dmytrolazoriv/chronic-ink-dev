@@ -236,9 +236,9 @@
 
 .bottom-footer__menu {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 1fr;
     row-gap: 20px;
-    column-gap: 60px;
+    column-gap: 40px;
 }
 
 @media (min-width: 576px) {
@@ -288,9 +288,29 @@
     }
 }
 
+.footer__localization {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-bottom: -12px;
+}
+
+@media (min-width: 576px) {
+    .footer__localization {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        row-gap: 20px;
+        column-gap: 40px;
+        margin: 0;
+    }
+}
+
 .bottom-footer__container .copyright__content,
 .bottom-footer__menu .list-menu__item,
-.footer__localization .country-selector__disclosure .disclosure__button {
+.footer__localization .country-selector__disclosure .disclosure__button,
+.footer__localization .language-selector__disclosure .disclosure__button {
     font-size: clamp(1.375rem, 1.3057rem + 0.2956vw, 1.625rem);
     font-weight: 500;
     line-height: normal;
@@ -300,7 +320,8 @@
 @media (min-width: 992px) {
     .bottom-footer__container .copyright__content,
     .bottom-footer__menu .list-menu__item,
-    .footer__localization .country-selector__disclosure .disclosure__button {
+    .footer__localization .country-selector__disclosure .disclosure__button,
+    .footer__localization .language-selector__disclosure .disclosure__button {
         font-size: 16px;
     }
 }
@@ -313,7 +334,8 @@
     color: var(--ghost-white-color);
 }
 
-.footer__localization .country-selector__disclosure .disclosure__button {
+.footer__localization .country-selector__disclosure .disclosure__button,
+.footer__localization .language-selector__disclosure .disclosure__button {
     background: transparent !important;
     margin: 0;
     padding: 0 4rem 0 0;
@@ -325,12 +347,14 @@
     margin: 0;
 }
 
-.footer__localization .country-selector__disclosure {
+.footer__localization .country-selector__disclosure,
+.footer__localization .language-selector__disclosure {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.footer__localization .country-selector__disclosure .disclosure__list-wrapper {
+.footer__localization .country-selector__disclosure .disclosure__list-wrapper,
+.footer__localization .language-selector__disclosure .disclosure__list-wrapper {
     color: initial;
 }

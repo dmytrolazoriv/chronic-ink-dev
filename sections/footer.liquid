@@ -240,10 +240,12 @@
               <localization-form>
                 {%- form 'localization', id: 'FooterLanguageForm', class: 'localization-form' -%}
                   <div class="no-js-hidden">
-                    <h2 class="caption-large text-body" id="FooterLanguageLabel">
-                      {{ 'localization.language_label' | t }}
-                    </h2>
-                    {%- render 'language-localization', localPosition: 'FooterLanguage' -%}
+                    {% if false %}
+                      <h2 class="caption-large text-body" id="FooterLanguageLabel">
+                        {{ 'localization.language_label' | t }}
+                      </h2>
+                    {% endif %}
+                    {%- render 'language-localization', localPosition: 'FooterLanguage', , show_globe_icon: false, custom_class: 'language-selector__disclosure' -%}
                   </div>
                 {%- endform -%}
               </localization-form>

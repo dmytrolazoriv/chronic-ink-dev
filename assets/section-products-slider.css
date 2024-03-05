@@ -314,7 +314,9 @@
 $container-offset: 15px;
 $container-width: calc($content-width + ($container-offset * 2)); */
 
-.page-width {
+
+/* == setting up container and paddings == */
+/* .page-width {
     max-width: var(--page-width);
     margin: 0 auto;
     padding: 0 var(--page-width-x-paddings-mobile);
@@ -328,7 +330,8 @@ $container-width: calc($content-width + ($container-offset * 2)); */
     .page-width {
       padding: 0 var(--page-width-x-paddings-desktop);
     }
-  }
+  } */
+  /* == setting up container and paddings == */
 
 /* .slider-container {
     padding: 0 0 0 clamp(1.25rem, 0.3977rem + 4.2614vw, 5rem);
