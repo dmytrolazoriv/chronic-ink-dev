@@ -1,7 +1,7 @@
 {
   "current": {
     "logo": "shopify:\/\/shop_images\/Chronic_Ink_Logo_2.png",
-    "logo_width": 150,
+    "logo_width": 190,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -118,7 +118,6 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
-    "checkout_logo_image": "shopify:\/\/shop_images\/StackdApps.io.png",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
