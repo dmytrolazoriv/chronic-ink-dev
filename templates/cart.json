@@ -31,10 +31,37 @@
         "padding_top": 20,
         "padding_bottom": 40
       }
+    },
+    "1710728382beeb6f33": {
+      "type": "apps",
+      "blocks": {
+        "stackdupsell_dev_star_rating_8eLLnE": {
+          "type": "shopify:\/\/apps\/stackdupsell-dev\/blocks\/star_rating\/84a4c4c6-5830-4f64-97bf-bfcd18e67a94",
+          "settings": {
+            "product": "",
+            "colour": "#ff0000"
+          }
+        },
+        "upsell_studio_star_rating_QfmfcB": {
+          "type": "shopify:\/\/apps\/upsell-studio\/blocks\/star_rating\/aad65aff-8ef4-4d45-addc-1aadef7f99c2",
+          "settings": {
+            "product": "",
+            "colour": "#ff0000"
+          }
+        }
+      },
+      "block_order": [
+        "stackdupsell_dev_star_rating_8eLLnE",
+        "upsell_studio_star_rating_QfmfcB"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "cart-items",
-    "cart-footer"
+    "cart-footer",
+    "1710728382beeb6f33"
   ]
 }
