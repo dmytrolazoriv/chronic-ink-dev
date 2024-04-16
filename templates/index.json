@@ -787,6 +787,82 @@
         "padding_top_mobile": 100,
         "padding_bottom_mobile": 0
       }
+    },
+    "products_slider_DkR6Ha": {
+      "type": "products-slider",
+      "blocks": {
+        "slide_b77yyB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-6.png",
+            "title": "David",
+            "description": "Uzi (@uzi.tattoo_)",
+            "price": "$ 114"
+          }
+        },
+        "slide_JRDBmm": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-7.png",
+            "title": "X-Ray Jellyfish",
+            "description": "Uzi (@uzi.tattoo_)",
+            "price": "$ 114"
+          }
+        },
+        "slide_iTbJFJ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-8.png",
+            "title": "Heron and Flowers",
+            "description": "Jubba (@jubba.oliveira)",
+            "price": "$ 114"
+          }
+        },
+        "slide_mdgLKU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-9.png",
+            "title": "Chronic Ink Tie Dye T-shirt",
+            "description": "Clothing",
+            "price": "$ 23"
+          }
+        },
+        "slide_j3mW4r": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-10.png",
+            "title": "Undead Warrior",
+            "description": "Raymond (@rayd_ink)",
+            "price": "$ 114"
+          }
+        },
+        "slide_dYiFK9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-13.png",
+            "title": "Heart and Flowers 6",
+            "description": "Brian Busta (@brian_busta)",
+            "price": "$ 114"
+          }
+        }
+      },
+      "block_order": [
+        "slide_b77yyB",
+        "slide_JRDBmm",
+        "slide_iTbJFJ",
+        "slide_mdgLKU",
+        "slide_j3mW4r",
+        "slide_dYiFK9"
+      ],
+      "settings": {
+        "title": "recommendations for you",
+        "button_text": "See all",
+        "button_link": "",
+        "padding_top": 200,
+        "padding_bottom": 200,
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 100
+      }
     }
   },
   "order": [
@@ -803,6 +879,7 @@
     "testimonials_GcTYhJ",
     "team_xJfCf6",
     "cta_second_yFhpjW",
-    "booking_eQNVV4"
+    "booking_eQNVV4",
+    "products_slider_DkR6Ha"
   ]
 }
