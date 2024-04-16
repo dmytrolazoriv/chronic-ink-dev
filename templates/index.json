@@ -397,10 +397,10 @@
         "image_9Efz8D"
       ],
       "settings": {
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0
+        "padding_top": 200,
+        "padding_bottom": 200,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 100
       }
     },
     "services_npPqN3": {
