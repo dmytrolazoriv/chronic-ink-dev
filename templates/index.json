@@ -403,6 +403,58 @@
         "padding_bottom_mobile": 100
       }
     },
+    "testimonials_new_LbGi99": {
+      "type": "testimonials-new",
+      "blocks": {
+        "card_qfNPLk": {
+          "type": "card",
+          "settings": {
+            "card_top_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10\/10 will be back for more tattoos here!",
+            "card_image": "shopify:\/\/shop_images\/Ellipse_12.png",
+            "card_bottom_title": "The Godfreys"
+          }
+        },
+        "card_7nKQxD": {
+          "type": "card",
+          "settings": {
+            "card_top_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10\/10 will be back for more tattoos here!",
+            "card_image": "shopify:\/\/shop_images\/Ellipse_12.png",
+            "card_bottom_title": "The Godfreys"
+          }
+        },
+        "card_pKNCkV": {
+          "type": "card",
+          "settings": {
+            "card_top_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10\/10 will be back for more tattoos here!",
+            "card_image": "shopify:\/\/shop_images\/Ellipse_12.png",
+            "card_bottom_title": "The Godfreys"
+          }
+        },
+        "card_B9e9Fn": {
+          "type": "card",
+          "settings": {
+            "card_top_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10\/10 will be back for more tattoos here!",
+            "card_image": "shopify:\/\/shop_images\/Ellipse_12.png",
+            "card_bottom_title": "The Godfreys"
+          }
+        }
+      },
+      "block_order": [
+        "card_qfNPLk",
+        "card_7nKQxD",
+        "card_pKNCkV",
+        "card_B9e9Fn"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
+        "title": "Testimonials",
+        "button_link": "#",
+        "button_text": "More REVIEWs ON"
+      }
+    },
     "services_npPqN3": {
       "type": "services",
       "blocks": {
@@ -671,58 +723,6 @@
         "button_text": "See all artists"
       }
     },
-    "testimonials_new_LbGi99": {
-      "type": "testimonials-new",
-      "blocks": {
-        "card_qfNPLk": {
-          "type": "card",
-          "settings": {
-            "card_top_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10\/10 will be back for more tattoos here!",
-            "card_image": "shopify:\/\/shop_images\/Ellipse_12.png",
-            "card_bottom_title": "The Godfreys"
-          }
-        },
-        "card_7nKQxD": {
-          "type": "card",
-          "settings": {
-            "card_top_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10\/10 will be back for more tattoos here!",
-            "card_image": "shopify:\/\/shop_images\/Ellipse_12.png",
-            "card_bottom_title": "The Godfreys"
-          }
-        },
-        "card_pKNCkV": {
-          "type": "card",
-          "settings": {
-            "card_top_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10\/10 will be back for more tattoos here!",
-            "card_image": "shopify:\/\/shop_images\/Ellipse_12.png",
-            "card_bottom_title": "The Godfreys"
-          }
-        },
-        "card_B9e9Fn": {
-          "type": "card",
-          "settings": {
-            "card_top_text": "Best tattoo experience I’ve had. My artist (Mati) captured my mom’s writing perfectly and he was kind, funny and made it a wonderful experience. 10\/10 will be back for more tattoos here!",
-            "card_image": "shopify:\/\/shop_images\/Ellipse_12.png",
-            "card_bottom_title": "The Godfreys"
-          }
-        }
-      },
-      "block_order": [
-        "card_qfNPLk",
-        "card_7nKQxD",
-        "card_pKNCkV",
-        "card_B9e9Fn"
-      ],
-      "settings": {
-        "padding_top": 32,
-        "padding_bottom": 32,
-        "padding_top_mobile": 24,
-        "padding_bottom_mobile": 24,
-        "title": "Testimonials",
-        "button_link": "#",
-        "button_text": "More REVIEWs ON"
-      }
-    },
     "cta_second_yFhpjW": {
       "type": "cta-second",
       "blocks": {
@@ -796,12 +796,12 @@
     "products_slider_JKBrxP",
     "endless_slider_YGmpXV",
     "cta_QY4hpC",
+    "testimonials_new_LbGi99",
     "services_npPqN3",
     "featured_collection",
     "chronic_blog_KVA9VY",
     "testimonials_GcTYhJ",
     "team_xJfCf6",
-    "testimonials_new_LbGi99",
     "cta_second_yFhpjW",
     "booking_eQNVV4"
   ]
