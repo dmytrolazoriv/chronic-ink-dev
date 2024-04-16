@@ -455,6 +455,158 @@
         "button_text": "More REVIEWs ON"
       }
     },
+    "products_slider_DkR6Ha": {
+      "type": "products-slider",
+      "blocks": {
+        "slide_b77yyB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-6.png",
+            "title": "David",
+            "description": "Uzi (@uzi.tattoo_)",
+            "price": "$ 114"
+          }
+        },
+        "slide_JRDBmm": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-7.png",
+            "title": "X-Ray Jellyfish",
+            "description": "Uzi (@uzi.tattoo_)",
+            "price": "$ 114"
+          }
+        },
+        "slide_iTbJFJ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-8.png",
+            "title": "Heron and Flowers",
+            "description": "Jubba (@jubba.oliveira)",
+            "price": "$ 114"
+          }
+        },
+        "slide_mdgLKU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-9.png",
+            "title": "Chronic Ink Tie Dye T-shirt",
+            "description": "Clothing",
+            "price": "$ 23"
+          }
+        },
+        "slide_j3mW4r": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-10.png",
+            "title": "Undead Warrior",
+            "description": "Raymond (@rayd_ink)",
+            "price": "$ 114"
+          }
+        },
+        "slide_dYiFK9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-13.png",
+            "title": "Heart and Flowers 6",
+            "description": "Brian Busta (@brian_busta)",
+            "price": "$ 114"
+          }
+        }
+      },
+      "block_order": [
+        "slide_b77yyB",
+        "slide_JRDBmm",
+        "slide_iTbJFJ",
+        "slide_mdgLKU",
+        "slide_j3mW4r",
+        "slide_dYiFK9"
+      ],
+      "settings": {
+        "title": "recommendations for you",
+        "button_text": "See all",
+        "button_link": "",
+        "padding_top": 200,
+        "padding_bottom": 200,
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 100
+      }
+    },
+    "products_slider_qfQDRa": {
+      "type": "products-slider",
+      "blocks": {
+        "slide_UqJYAp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-11.png",
+            "title": "Wisdom",
+            "description": "Isabel (@chong_ink)",
+            "price": "$ 114"
+          }
+        },
+        "slide_mc4Jaa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-12.png",
+            "title": "Lilies",
+            "description": "Jubba (@jubba.oliveira)",
+            "price": "$ 114"
+          }
+        },
+        "slide_dqtdDi": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-13.png",
+            "title": "Lily Skull",
+            "description": "Michelle (@letmehurtyou)",
+            "price": "$ 114"
+          }
+        },
+        "slide_jGzBqa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-14.png",
+            "title": "Heart and Flowers 6",
+            "description": "Brian Busta (brian_busta)",
+            "price": "$ 114"
+          }
+        },
+        "slide_Y4if3U": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-15.png",
+            "title": "Snake Sexy",
+            "description": "Alex Prequel (@alexprequel_tattooartist)",
+            "price": "$ 114"
+          }
+        },
+        "slide_VFtRHY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-7.png",
+            "title": "X-Ray Jellyfish",
+            "description": "Uzi (@uzi.tattoo_)",
+            "price": "$ 114"
+          }
+        }
+      },
+      "block_order": [
+        "slide_UqJYAp",
+        "slide_mc4Jaa",
+        "slide_dqtdDi",
+        "slide_jGzBqa",
+        "slide_Y4if3U",
+        "slide_VFtRHY"
+      ],
+      "settings": {
+        "title": "Flash tattoo",
+        "button_text": "See all",
+        "button_link": "",
+        "padding_top": 0,
+        "padding_bottom": 200,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 100
+      }
+    },
     "services_npPqN3": {
       "type": "services",
       "blocks": {
@@ -787,82 +939,6 @@
         "padding_top_mobile": 100,
         "padding_bottom_mobile": 0
       }
-    },
-    "products_slider_DkR6Ha": {
-      "type": "products-slider",
-      "blocks": {
-        "slide_b77yyB": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/products-slider-img-6.png",
-            "title": "David",
-            "description": "Uzi (@uzi.tattoo_)",
-            "price": "$ 114"
-          }
-        },
-        "slide_JRDBmm": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/products-slider-img-7.png",
-            "title": "X-Ray Jellyfish",
-            "description": "Uzi (@uzi.tattoo_)",
-            "price": "$ 114"
-          }
-        },
-        "slide_iTbJFJ": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/products-slider-img-8.png",
-            "title": "Heron and Flowers",
-            "description": "Jubba (@jubba.oliveira)",
-            "price": "$ 114"
-          }
-        },
-        "slide_mdgLKU": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/products-slider-img-9.png",
-            "title": "Chronic Ink Tie Dye T-shirt",
-            "description": "Clothing",
-            "price": "$ 23"
-          }
-        },
-        "slide_j3mW4r": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/products-slider-img-10.png",
-            "title": "Undead Warrior",
-            "description": "Raymond (@rayd_ink)",
-            "price": "$ 114"
-          }
-        },
-        "slide_dYiFK9": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/products-slider-img-13.png",
-            "title": "Heart and Flowers 6",
-            "description": "Brian Busta (@brian_busta)",
-            "price": "$ 114"
-          }
-        }
-      },
-      "block_order": [
-        "slide_b77yyB",
-        "slide_JRDBmm",
-        "slide_iTbJFJ",
-        "slide_mdgLKU",
-        "slide_j3mW4r",
-        "slide_dYiFK9"
-      ],
-      "settings": {
-        "title": "recommendations for you",
-        "button_text": "See all",
-        "button_link": "",
-        "padding_top": 200,
-        "padding_bottom": 200,
-        "padding_top_mobile": 100,
-        "padding_bottom_mobile": 100
-      }
     }
   },
   "order": [
@@ -873,13 +949,14 @@
     "endless_slider_YGmpXV",
     "cta_QY4hpC",
     "testimonials_new_LbGi99",
+    "products_slider_DkR6Ha",
+    "products_slider_qfQDRa",
     "services_npPqN3",
     "featured_collection",
     "chronic_blog_KVA9VY",
     "testimonials_GcTYhJ",
     "team_xJfCf6",
     "cta_second_yFhpjW",
-    "booking_eQNVV4",
-    "products_slider_DkR6Ha"
+    "booking_eQNVV4"
   ]
 }
