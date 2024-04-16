@@ -607,6 +607,118 @@
         "padding_bottom_mobile": 100
       }
     },
+    "cta_second_yFhpjW": {
+      "type": "cta-second",
+      "blocks": {
+        "title_c6PjBJ": {
+          "type": "title",
+          "settings": {
+            "title": "Tell us your tattoo idea"
+          }
+        },
+        "text_bkTEhN": {
+          "type": "text",
+          "settings": {
+            "text": "Fill out our quick form to book a free consultation. We will tell you the estimated price and how many sessions are needed"
+          }
+        },
+        "button_wcrC94": {
+          "type": "button",
+          "settings": {
+            "button_link": "#",
+            "button_text": "Free consultation"
+          }
+        }
+      },
+      "block_order": [
+        "title_c6PjBJ",
+        "text_bkTEhN",
+        "button_wcrC94"
+      ],
+      "settings": {
+        "padding_top": 200,
+        "padding_bottom": 200,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
+        "background_image": "shopify:\/\/shop_images\/call-to-action-bg.png"
+      }
+    },
+    "products_slider_iKDaWj": {
+      "type": "products-slider",
+      "blocks": {
+        "slide_UJCzY6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-16.png",
+            "title": "PurSan",
+            "description": "Piercing Aftercare",
+            "price": "$ 19"
+          }
+        },
+        "slide_etH9PG": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-17.png",
+            "title": "NeilMed Neilcleanse Piercing Aftercare",
+            "description": "Piercing Aftercare",
+            "price": "$ 17"
+          }
+        },
+        "slide_7C3N8R": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-18.png",
+            "title": "PurTat",
+            "description": "Tattoo Aftercare",
+            "price": "$ 19"
+          }
+        },
+        "slide_zMhKMU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-19.png",
+            "title": "Product name",
+            "description": "Piercing Aftercare",
+            "price": "$ 25"
+          }
+        },
+        "slide_DNFBir": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-20.png",
+            "title": "Purklenz",
+            "description": "Tattoo Aftercare",
+            "price": "$ 27"
+          }
+        },
+        "slide_c9aqby": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-18.png",
+            "title": "PurTat",
+            "description": "Tattoo Aftercare",
+            "price": "$ 19"
+          }
+        }
+      },
+      "block_order": [
+        "slide_UJCzY6",
+        "slide_etH9PG",
+        "slide_7C3N8R",
+        "slide_zMhKMU",
+        "slide_DNFBir",
+        "slide_c9aqby"
+      ],
+      "settings": {
+        "title": "recommendations for you",
+        "button_text": "See all",
+        "button_link": "",
+        "padding_top": 200,
+        "padding_bottom": 200,
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 100
+      }
+    },
     "services_npPqN3": {
       "type": "services",
       "blocks": {
@@ -875,42 +987,6 @@
         "button_text": "See all artists"
       }
     },
-    "cta_second_yFhpjW": {
-      "type": "cta-second",
-      "blocks": {
-        "title_c6PjBJ": {
-          "type": "title",
-          "settings": {
-            "title": "Tell us your tattoo idea"
-          }
-        },
-        "text_bkTEhN": {
-          "type": "text",
-          "settings": {
-            "text": "Fill out our quick form to book a free consultation. We will tell you the estimated price and how many sessions are needed"
-          }
-        },
-        "button_wcrC94": {
-          "type": "button",
-          "settings": {
-            "button_link": "#",
-            "button_text": "Free consultation"
-          }
-        }
-      },
-      "block_order": [
-        "title_c6PjBJ",
-        "text_bkTEhN",
-        "button_wcrC94"
-      ],
-      "settings": {
-        "padding_top": 200,
-        "padding_bottom": 200,
-        "padding_top_mobile": 60,
-        "padding_bottom_mobile": 60,
-        "background_image": "shopify:\/\/shop_images\/call-to-action-bg.png"
-      }
-    },
     "booking_eQNVV4": {
       "type": "booking",
       "blocks": {
@@ -951,12 +1027,13 @@
     "testimonials_new_LbGi99",
     "products_slider_DkR6Ha",
     "products_slider_qfQDRa",
+    "cta_second_yFhpjW",
+    "products_slider_iKDaWj",
     "services_npPqN3",
     "featured_collection",
     "chronic_blog_KVA9VY",
     "testimonials_GcTYhJ",
     "team_xJfCf6",
-    "cta_second_yFhpjW",
     "booking_eQNVV4"
   ]
 }
