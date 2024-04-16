@@ -73,7 +73,68 @@
         "padding_bottom": 0,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 0,
-        "video": "shopify:\/\/files\/videos\/pexels-lisa-fotios-20027007 (Original).mp4"
+        "video": "shopify:\/\/files\/videos\/hero_video.mp4"
+      }
+    },
+    "services_new_tqqK34": {
+      "type": "services-new",
+      "blocks": {
+        "item_9zLj4F": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify:\/\/shop_images\/services-image-1.png",
+            "item_title": "Tattoos",
+            "button_link": "#test",
+            "button_text": "Try survey",
+            "show_location": false,
+            "elements_color": "default"
+          }
+        },
+        "item_GR7qxn": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify:\/\/shop_images\/services-image-2.png",
+            "item_title": "Piercing",
+            "button_link": "#test",
+            "button_text": "Book now",
+            "show_location": true,
+            "elements_color": "default"
+          }
+        },
+        "item_pD8jzX": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify:\/\/shop_images\/services-image-3.png",
+            "item_title": "Flash tattoos",
+            "button_link": "#test",
+            "button_text": "Browse",
+            "show_location": false,
+            "elements_color": "default"
+          }
+        },
+        "item_qeBAa8": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify:\/\/shop_images\/services-image-4.png",
+            "item_title": "Jewelry",
+            "button_link": "#test",
+            "button_text": "Shop",
+            "show_location": false,
+            "elements_color": "light"
+          }
+        }
+      },
+      "block_order": [
+        "item_9zLj4F",
+        "item_GR7qxn",
+        "item_pD8jzX",
+        "item_qeBAa8"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
       }
     },
     "cta_QY4hpC": {
@@ -161,6 +222,7 @@
         "item_z9c4eB",
         "item_e9RWLd"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 0,
         "padding_bottom": 0,
@@ -360,7 +422,6 @@
         "slide_wWAGTC": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Card_e721d338-bd9c-45bc-8dab-14a868caa385.png",
             "title": "David",
             "description": "Uzi (@uzi.tattoo_)",
             "price": "$ 114"
@@ -369,7 +430,6 @@
         "slide_9LzKXg": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Card_e721d338-bd9c-45bc-8dab-14a868caa385.png",
             "title": "David",
             "description": "Uzi (@uzi.tattoo_)",
             "price": "$ 114"
@@ -378,7 +438,6 @@
         "slide_YULgcb": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Card_e721d338-bd9c-45bc-8dab-14a868caa385.png",
             "title": "David",
             "description": "Uzi (@uzi.tattoo_)",
             "price": "$ 114"
@@ -387,7 +446,6 @@
         "slide_hAYRgV": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Card_e721d338-bd9c-45bc-8dab-14a868caa385.png",
             "title": "David",
             "description": "Uzi (@uzi.tattoo_)",
             "price": "$ 114"
@@ -396,7 +454,6 @@
         "slide_HRJ64A": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Card_e721d338-bd9c-45bc-8dab-14a868caa385.png",
             "title": "David",
             "description": "Uzi (@uzi.tattoo_)",
             "price": "$ 114"
@@ -405,7 +462,6 @@
         "slide_ddit8G": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Card_e721d338-bd9c-45bc-8dab-14a868caa385.png",
             "title": "David",
             "description": "Uzi (@uzi.tattoo_)",
             "price": "$ 114"
@@ -414,7 +470,6 @@
         "slide_9aaXwy": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Card_e721d338-bd9c-45bc-8dab-14a868caa385.png",
             "title": "David",
             "description": "Uzi (@uzi.tattoo_)",
             "price": "$ 114"
@@ -423,7 +478,6 @@
         "slide_dWpDAJ": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Card_e721d338-bd9c-45bc-8dab-14a868caa385.png",
             "title": "David",
             "description": "Uzi (@uzi.tattoo_)",
             "price": "$ 114"
@@ -442,6 +496,8 @@
       ],
       "settings": {
         "title": "",
+        "button_text": "See all",
+        "button_link": "",
         "padding_top": 32,
         "padding_bottom": 32,
         "padding_top_mobile": 24,
@@ -488,7 +544,7 @@
         "blog_item_jTphCL"
       ],
       "settings": {
-        "video": "shopify:\/\/files\/videos\/pexels-lisa-fotios-20027007 (Original).mp4",
+        "video": "shopify:\/\/files\/videos\/hero_video.mp4",
         "title": "From the iconic and award-winning studio, read all about it.",
         "button_link": "",
         "button_text": "View blog",
@@ -560,6 +616,7 @@
         "card_T4GPX9",
         "card_7QbXQb"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 100,
         "padding_bottom": 100,
@@ -568,70 +625,12 @@
         "title": "Testimonials"
       }
     },
-    "services_new_tqqK34": {
-      "type": "services-new",
-      "blocks": {
-        "item_9zLj4F": {
-          "type": "item",
-          "settings": {
-            "item_image": "shopify:\/\/shop_images\/Title_Tatoo_State_Default_Device_PC.png",
-            "item_title": "Tattoos",
-            "button_link": "#test",
-            "button_text": "Try survey",
-            "show_location": false
-          }
-        },
-        "item_GR7qxn": {
-          "type": "item",
-          "settings": {
-            "item_image": "shopify:\/\/shop_images\/Title_Tatoo_State_Default_Device_PC.png",
-            "item_title": "Tattoos",
-            "button_link": "#test",
-            "button_text": "Try survey",
-            "show_location": true
-          }
-        },
-        "item_pD8jzX": {
-          "type": "item",
-          "settings": {
-            "item_image": "shopify:\/\/shop_images\/Title_Tatoo_State_Default_Device_PC.png",
-            "item_title": "Tattoos",
-            "button_link": "#test",
-            "button_text": "Try survey",
-            "show_location": false
-          }
-        },
-        "item_qeBAa8": {
-          "type": "item",
-          "settings": {
-            "item_image": "shopify:\/\/shop_images\/Title_Tatoo_State_Default_Device_PC.png",
-            "item_title": "Tattoos",
-            "button_link": "#test",
-            "button_text": "Try survey",
-            "show_location": false
-          }
-        }
-      },
-      "block_order": [
-        "item_9zLj4F",
-        "item_GR7qxn",
-        "item_pD8jzX",
-        "item_qeBAa8"
-      ],
-      "settings": {
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 24
-      }
-    },
     "team_xJfCf6": {
       "type": "team",
       "blocks": {
         "card_agpWag": {
           "type": "card",
           "settings": {
-            "card_image": "shopify:\/\/shop_images\/card-team.png",
             "card_name": "Emma",
             "card_place": "Downtown Toronto"
           }
@@ -639,7 +638,6 @@
         "card_VtKqXw": {
           "type": "card",
           "settings": {
-            "card_image": "shopify:\/\/shop_images\/card-team.png",
             "card_name": "Emma",
             "card_place": "Downtown Toronto"
           }
@@ -647,7 +645,6 @@
         "card_tEwDQQ": {
           "type": "card",
           "settings": {
-            "card_image": "shopify:\/\/shop_images\/card-team.png",
             "card_name": "Emma",
             "card_place": "Downtown Toronto"
           }
@@ -655,7 +652,6 @@
         "card_fqQN4r": {
           "type": "card",
           "settings": {
-            "card_image": "shopify:\/\/shop_images\/card-team.png",
             "card_name": "Emma",
             "card_place": "Downtown Toronto"
           }
@@ -663,7 +659,6 @@
         "card_kxYKLw": {
           "type": "card",
           "settings": {
-            "card_image": "shopify:\/\/shop_images\/card-team.png",
             "card_name": "Emma",
             "card_place": "Downtown Toronto"
           }
@@ -807,6 +802,7 @@
   "order": [
     "image_banner",
     "hero_banner_XT4Yxz",
+    "services_new_tqqK34",
     "cta_QY4hpC",
     "services_npPqN3",
     "featured_collection",
@@ -814,7 +810,6 @@
     "products_slider_JKBrxP",
     "chronic_blog_KVA9VY",
     "testimonials_GcTYhJ",
-    "services_new_tqqK34",
     "team_xJfCf6",
     "testimonials_new_LbGi99",
     "cta_second_yFhpjW",
