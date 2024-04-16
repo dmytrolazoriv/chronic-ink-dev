@@ -137,6 +137,100 @@
         "padding_bottom_mobile": 20
       }
     },
+    "products_slider_JKBrxP": {
+      "type": "products-slider",
+      "blocks": {
+        "slide_wWAGTC": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-1.png",
+            "title": "Realism",
+            "description": "",
+            "price": ""
+          }
+        },
+        "slide_83cMze": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-2.png",
+            "title": "Asian",
+            "description": "",
+            "price": ""
+          }
+        },
+        "slide_9LzKXg": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-3.png",
+            "title": "Fine line",
+            "description": "",
+            "price": ""
+          }
+        },
+        "slide_YULgcb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-4.png",
+            "title": "Blackwork",
+            "description": "",
+            "price": ""
+          }
+        },
+        "slide_hAYRgV": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-5.png",
+            "title": "Embroidery",
+            "description": "",
+            "price": ""
+          }
+        },
+        "slide_HRJ64A": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products-slider-img-2.png",
+            "title": "Asian",
+            "description": "",
+            "price": ""
+          }
+        },
+        "slide_ddit8G": {
+          "type": "slide",
+          "settings": {
+            "title": "David",
+            "description": "Uzi (@uzi.tattoo_)",
+            "price": "$ 114"
+          }
+        },
+        "slide_9aaXwy": {
+          "type": "slide",
+          "settings": {
+            "title": "David",
+            "description": "Uzi (@uzi.tattoo_)",
+            "price": "$ 114"
+          }
+        }
+      },
+      "block_order": [
+        "slide_wWAGTC",
+        "slide_83cMze",
+        "slide_9LzKXg",
+        "slide_YULgcb",
+        "slide_hAYRgV",
+        "slide_HRJ64A",
+        "slide_ddit8G",
+        "slide_9aaXwy"
+      ],
+      "settings": {
+        "title": "Award winning tattoos",
+        "button_text": "See all",
+        "button_link": "",
+        "padding_top": 200,
+        "padding_bottom": 200,
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 100
+      }
+    },
     "cta_QY4hpC": {
       "type": "cta",
       "blocks": {
@@ -414,94 +508,6 @@
         "padding_bottom": 38,
         "padding_top_mobile": 28,
         "padding_bottom_mobile": 28
-      }
-    },
-    "products_slider_JKBrxP": {
-      "type": "products-slider",
-      "blocks": {
-        "slide_wWAGTC": {
-          "type": "slide",
-          "settings": {
-            "title": "David",
-            "description": "Uzi (@uzi.tattoo_)",
-            "price": "$ 114"
-          }
-        },
-        "slide_9LzKXg": {
-          "type": "slide",
-          "settings": {
-            "title": "David",
-            "description": "Uzi (@uzi.tattoo_)",
-            "price": "$ 114"
-          }
-        },
-        "slide_YULgcb": {
-          "type": "slide",
-          "settings": {
-            "title": "David",
-            "description": "Uzi (@uzi.tattoo_)",
-            "price": "$ 114"
-          }
-        },
-        "slide_hAYRgV": {
-          "type": "slide",
-          "settings": {
-            "title": "David",
-            "description": "Uzi (@uzi.tattoo_)",
-            "price": "$ 114"
-          }
-        },
-        "slide_HRJ64A": {
-          "type": "slide",
-          "settings": {
-            "title": "David",
-            "description": "Uzi (@uzi.tattoo_)",
-            "price": "$ 114"
-          }
-        },
-        "slide_ddit8G": {
-          "type": "slide",
-          "settings": {
-            "title": "David",
-            "description": "Uzi (@uzi.tattoo_)",
-            "price": "$ 114"
-          }
-        },
-        "slide_9aaXwy": {
-          "type": "slide",
-          "settings": {
-            "title": "David",
-            "description": "Uzi (@uzi.tattoo_)",
-            "price": "$ 114"
-          }
-        },
-        "slide_dWpDAJ": {
-          "type": "slide",
-          "settings": {
-            "title": "David",
-            "description": "Uzi (@uzi.tattoo_)",
-            "price": "$ 114"
-          }
-        }
-      },
-      "block_order": [
-        "slide_wWAGTC",
-        "slide_9LzKXg",
-        "slide_YULgcb",
-        "slide_hAYRgV",
-        "slide_HRJ64A",
-        "slide_ddit8G",
-        "slide_9aaXwy",
-        "slide_dWpDAJ"
-      ],
-      "settings": {
-        "title": "",
-        "button_text": "See all",
-        "button_link": "",
-        "padding_top": 32,
-        "padding_bottom": 32,
-        "padding_top_mobile": 24,
-        "padding_bottom_mobile": 24
       }
     },
     "chronic_blog_KVA9VY": {
@@ -803,11 +809,11 @@
     "image_banner",
     "hero_banner_XT4Yxz",
     "services_new_tqqK34",
+    "products_slider_JKBrxP",
     "cta_QY4hpC",
     "services_npPqN3",
     "featured_collection",
     "endless_slider_YGmpXV",
-    "products_slider_JKBrxP",
     "chronic_blog_KVA9VY",
     "testimonials_GcTYhJ",
     "team_xJfCf6",
