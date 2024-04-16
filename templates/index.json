@@ -231,6 +231,147 @@
         "padding_bottom_mobile": 100
       }
     },
+    "endless_slider_YGmpXV": {
+      "type": "endless-slider",
+      "blocks": {
+        "slide_KyLGhm": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Toronto GTA",
+            "highlight_slide": true
+          }
+        },
+        "slide_da6Nze": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Chronic House",
+            "highlight_slide": false
+          }
+        },
+        "slide_LbbbcN": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Downtown Toronto",
+            "highlight_slide": false
+          }
+        },
+        "slide_Pp8iRU": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Midtown Toronto",
+            "highlight_slide": false
+          }
+        },
+        "slide_MjKyDc": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Markham",
+            "highlight_slide": false
+          }
+        },
+        "slide_cADgGE": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Mississauga",
+            "highlight_slide": false
+          }
+        },
+        "slide_mnhnXk": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Vancouver",
+            "highlight_slide": true
+          }
+        },
+        "slide_jb8gQf": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Kitsilano",
+            "highlight_slide": false
+          }
+        },
+        "slide_TqWw9J": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Toronto GTA",
+            "highlight_slide": true
+          }
+        },
+        "slide_WE6CU3": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Chronic House",
+            "highlight_slide": false
+          }
+        },
+        "slide_7eAmfh": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Downtown Toronto",
+            "highlight_slide": false
+          }
+        },
+        "slide_eUjXVa": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Midtown Toronto",
+            "highlight_slide": false
+          }
+        },
+        "slide_wUdLfH": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Markham",
+            "highlight_slide": false
+          }
+        },
+        "slide_c6jgKj": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Mississauga",
+            "highlight_slide": false
+          }
+        },
+        "slide_6PUMqG": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Vancouver",
+            "highlight_slide": true
+          }
+        },
+        "slide_mb7qQh": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "Kitsilano",
+            "highlight_slide": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_KyLGhm",
+        "slide_da6Nze",
+        "slide_LbbbcN",
+        "slide_Pp8iRU",
+        "slide_MjKyDc",
+        "slide_cADgGE",
+        "slide_mnhnXk",
+        "slide_jb8gQf",
+        "slide_TqWw9J",
+        "slide_WE6CU3",
+        "slide_7eAmfh",
+        "slide_eUjXVa",
+        "slide_wUdLfH",
+        "slide_c6jgKj",
+        "slide_6PUMqG",
+        "slide_mb7qQh"
+      ],
+      "settings": {
+        "padding_top": 38,
+        "padding_bottom": 38,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
     "cta_QY4hpC": {
       "type": "cta",
       "blocks": {
@@ -351,163 +492,6 @@
         "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
-      }
-    },
-    "endless_slider_YGmpXV": {
-      "type": "endless-slider",
-      "blocks": {
-        "slide_KyLGhm": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": false
-          }
-        },
-        "slide_da6Nze": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": true
-          }
-        },
-        "slide_LbbbcN": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": false
-          }
-        },
-        "slide_Pp8iRU": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": true
-          }
-        },
-        "slide_MjKyDc": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": false
-          }
-        },
-        "slide_cADgGE": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": false
-          }
-        },
-        "slide_mnhnXk": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": false
-          }
-        },
-        "slide_jb8gQf": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": false
-          }
-        },
-        "slide_TqWw9J": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": true
-          }
-        },
-        "slide_WE6CU3": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": false
-          }
-        },
-        "slide_7eAmfh": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": false
-          }
-        },
-        "slide_eUjXVa": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": true
-          }
-        },
-        "slide_wUdLfH": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": false
-          }
-        },
-        "slide_c6jgKj": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": false
-          }
-        },
-        "slide_6PUMqG": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": false
-          }
-        },
-        "slide_mb7qQh": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": true
-          }
-        },
-        "slide_j7EPXd": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": false
-          }
-        },
-        "slide_9xLyYJ": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "Vancouver",
-            "highlight_slide": false
-          }
-        }
-      },
-      "block_order": [
-        "slide_KyLGhm",
-        "slide_da6Nze",
-        "slide_LbbbcN",
-        "slide_Pp8iRU",
-        "slide_MjKyDc",
-        "slide_cADgGE",
-        "slide_mnhnXk",
-        "slide_jb8gQf",
-        "slide_TqWw9J",
-        "slide_WE6CU3",
-        "slide_7eAmfh",
-        "slide_eUjXVa",
-        "slide_wUdLfH",
-        "slide_c6jgKj",
-        "slide_6PUMqG",
-        "slide_mb7qQh",
-        "slide_j7EPXd",
-        "slide_9xLyYJ"
-      ],
-      "settings": {
-        "padding_top": 38,
-        "padding_bottom": 38,
-        "padding_top_mobile": 28,
-        "padding_bottom_mobile": 28
       }
     },
     "chronic_blog_KVA9VY": {
@@ -810,10 +794,10 @@
     "hero_banner_XT4Yxz",
     "services_new_tqqK34",
     "products_slider_JKBrxP",
+    "endless_slider_YGmpXV",
     "cta_QY4hpC",
     "services_npPqN3",
     "featured_collection",
-    "endless_slider_YGmpXV",
     "chronic_blog_KVA9VY",
     "testimonials_GcTYhJ",
     "team_xJfCf6",
