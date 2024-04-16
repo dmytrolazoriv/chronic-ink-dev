@@ -197,17 +197,19 @@
         "slide_ddit8G": {
           "type": "slide",
           "settings": {
-            "title": "David",
-            "description": "Uzi (@uzi.tattoo_)",
-            "price": "$ 114"
+            "image": "shopify:\/\/shop_images\/products-slider-img-3.png",
+            "title": "Fine line",
+            "description": "",
+            "price": ""
           }
         },
         "slide_9aaXwy": {
           "type": "slide",
           "settings": {
-            "title": "David",
-            "description": "Uzi (@uzi.tattoo_)",
-            "price": "$ 114"
+            "image": "shopify:\/\/shop_images\/products-slider-img-1.png",
+            "title": "Realism",
+            "description": "",
+            "price": ""
           }
         }
       },
