@@ -35,7 +35,7 @@
           </div>
         {%- endif -%}
 
-        <div class="item-services-new__info">
+      <div class="item-services-new__info {% if block.settings.elements_color == "light"%}item-services-new__info_light{% endif %}">
           <h3 class="item-services-new__title">
             {{ block.settings.item_title }}
           </h3>
@@ -63,7 +63,7 @@
           <a class="item-services-new__link" href="{{ block.settings.button_link }}">
             {{ block.settings.button_text }}
           </a>
-        </div>
+      </div>
      
         </div>
       {%- endfor -%}
@@ -154,6 +154,22 @@
               "id": "show_location",
               "label": "Show location selector",
               "default": false
+            },
+            {
+              "type": "select",
+              "id": "elements_color",
+              "label": "Elements color",
+              "options": [
+                {
+                  "value": "default",
+                  "label": "Default color"
+                },
+                {
+                  "value": "light",
+                  "label": "Light color"
+                }
+              ],
+              "default": "default"
             }
            ]
          }

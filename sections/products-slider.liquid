@@ -22,8 +22,10 @@
         <a class="slider-top__link slider-link" href="#">Shop now</a>
       </div> {% endcomment %}
       <div class="section__header">
-        <h2 class="section__title">recommendations for you</h2>
-        <a class="section__link section-link" href="#">Shop now</a>
+        <h2 class="section__title">{{ section.settings.title }}</h2>
+        <a class="section__link section-link" href="{{ section.settings.button_link }}">
+          {{ section.settings.button_text }}
+        </a>
       </div>
       <div class="slider-top__controls controls">
         <button type="button" class="slider-top__button slider-top__button-prev slider__button_prev slider__button">
@@ -52,14 +54,6 @@
                 </div>
             </div>
           {%- endfor -%}
-          {% comment %} <div class="slider-main__slide slider-slide swiper-slide">Slide 2</div>
-          <div class="slider-main__slide slider-slide swiper-slide">Slide 3</div>
-          <div class="slider-main__slide slider-slide swiper-slide">Slide 4</div>
-          <div class="slider-main__slide slider-slide swiper-slide">Slide 5</div>
-          <div class="slider-main__slide slider-slide swiper-slide">Slide 6</div>
-          <div class="slider-main__slide slider-slide swiper-slide">Slide 7</div>
-          <div class="slider-main__slide slider-slide swiper-slide">Slide 8</div>
-          <div class="slider-main__slide slider-slide swiper-slide">Slide 9</div> {% endcomment %}
         </div>
         <div class="swiper-scrollbar"></div>
       </div>
@@ -74,7 +68,19 @@
         {
           "type": "text",
           "id": "title",
-          "label": "Slideshow"
+          "label": "Title",
+          "default": "Award winning tattoos"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "See all"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
         },
         {
             "type": "header",
@@ -84,7 +90,7 @@
             "type": "range",
             "id": "padding_top",
             "min": 0,
-            "max": 100,
+            "max": 200,
             "step": 2,
             "unit": "px",
             "label": "t:sections.all.padding.padding_top",
@@ -94,7 +100,7 @@
             "type": "range",
             "id": "padding_bottom",
             "min": 0,
-            "max": 100,
+            "max": 200,
             "step": 2,
             "unit": "px",
             "label": "t:sections.all.padding.padding_bottom",
@@ -162,6 +168,18 @@
           "settings": {
           },
           "blocks": [
+            {
+              "type": "slide"
+            },
+            {
+              "type": "slide"
+            },
+            {
+              "type": "slide"
+            },
+            {
+              "type": "slide"
+            },
             {
               "type": "slide"
             },

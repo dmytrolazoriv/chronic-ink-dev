@@ -79,6 +79,16 @@ img {
   white-space: nowrap;
 }
 
+.button_simple {
+  font-size: clamp(1.25rem, 1.0187rem + 0.9871vw, 2.203125rem);
+  font-weight: 500;
+  line-height: normal;
+  color: var(--ghost-white-color);
+  border: none;
+  background: transparent;
+  text-decoration: underline;
+}
+
 @media (min-width: 576px) {
   .button {
     padding: 10px 52px;
@@ -115,6 +125,12 @@ img {
   border: 1px solid #BA9560;
   background: #ffffff;
   color: #BA9560;
+}
+
+.button_simple:hover {
+  border: transparent;
+  background: transparent;
+  color: var(--blue-color);
 }
 
 .button::before,
@@ -226,14 +242,15 @@ img {
 
 /* ==== */
 .section__header-indent {
-  margin: 40px 0;
+  /* margin: 40px 0; */
+  margin: 0 0 clamp(.65625rem,-1.6117rem + 9.6764vw,10rem) 0;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .section__header-indent {
       margin: 60px 0;
   }
-}
+} */
 
 .section__header {
   display: flex;

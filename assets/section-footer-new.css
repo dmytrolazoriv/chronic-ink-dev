@@ -221,7 +221,8 @@
     width: 2.6rem;
 }
 
-.footer__list-social-new .icon-tiktok {
+.footer__list-social-new .icon-tiktok,
+.menu-drawer__utility-links .icon-tiktok {
     fill: transparent;
 }
 
