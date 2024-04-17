@@ -845,6 +845,7 @@
           "type": "blog_item",
           "settings": {
             "item_image": "shopify:\/\/shop_images\/Img3mob.png",
+            "item_image_mob": "shopify:\/\/shop_images\/Img3mob.png",
             "item_title": "Discover the Best Tattoo Shops in Toronto: A Comprehensive Guide",
             "item_desc": "Toronto is home to some of the best tattoo shops in the world, and Chronic Ink Tattoo is no exception. With multiple locations across the city, our popular tattoo studios offers a wide range of styles and experienced artists. In this article, we'll introduce you to the Chronic Ink locations in Toronto and help you choose the right artist for your next tattoo.",
             "item_link_url": "",
