@@ -39,7 +39,14 @@
                 <div class="rightside-blog__item blog-item" {{ block.shopify_attributes }}>
                     <div class="blog-item__image">
                       {%- if block.settings.item_image != blank -%}
-                          {{ block.settings.item_image | image_url: width: 347 | image_tag }}
+                        <picture>
+                          <source
+                            media="(min-width: 992px)"
+                            srcset="
+                            {{ block.settings.item_image | image_url: width: 347 }} 347w,
+                              ">
+                              {{ block.settings.item_image_mob | image_url: width: 347 | image_tag }}
+                          </picture>
                         {% else %}
                         {{ 'image' | placeholder_svg_tag }}
                       {%- endif -%}
@@ -149,7 +156,12 @@
              {
                "type": "image_picker",
                "id": "item_image",
-               "label": "Item image"
+               "label": "Item image desktop"
+             },
+             {
+               "type": "image_picker",
+               "id": "item_image_mob",
+               "label": "Item image mobile"
              },
              {
               "type": "text",

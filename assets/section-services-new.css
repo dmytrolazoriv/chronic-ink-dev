@@ -1,11 +1,12 @@
 .services-new {
-    padding: 0 20px;
+    padding: 0;
     color: var(--rich-black-color);
 }
 
 @media (min-width: 768px) {
     .services-new {
         color: var(--golden-color);
+        padding: 0 20px;
     }
 }
 

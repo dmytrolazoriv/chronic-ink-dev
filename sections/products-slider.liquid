@@ -48,7 +48,9 @@
                     {% endif %}
                     <a href="#" class="slider-slide__button button">Add to cart</a>
                   </div>
-                  <h3 class="slider-slide__title">{{ block.settings.title }}</h3>
+                  <h3 class="slider-slide__title slider-slide__title_{{ section.settings.title_aligment }}">
+                    {{ block.settings.title | truncate: 31 }}
+                  </h3>
                   <p class="slider-slide__nickname">{{ block.settings.description }}</p>
                   <p class="slider-slide__price">{{ block.settings.price }}</p>
                 </div>
@@ -129,6 +131,26 @@
             "unit": "px",
             "label": "t:sections.all.padding.padding_bottom",
             "default": 24
+        },
+        {
+          "type": "radio",
+          "id": "title_aligment",
+          "label": "Title alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
         }
       ],
       "blocks": [

@@ -283,6 +283,18 @@
     margin: 0 0 12px 0;
 }
 
+.slider-slide__title_left {
+    text-align: left;
+}
+
+.slider-slide__title_center {
+    text-align: center;
+}
+
+.slider-slide__title_right {
+    text-align: right;
+}
+
 .slider-slide__title,
 .slider-slide__price {
     font-size: 24px;
