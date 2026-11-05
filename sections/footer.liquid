@@ -245,7 +245,7 @@
                         {{ 'localization.language_label' | t }}
                       </h2>
                     {% endif %}
-                    {%- render 'language-localization', localPosition: 'FooterLanguage', , show_globe_icon: false, custom_class: 'language-selector__disclosure' -%}
+                    {%- render 'language-localization', localPosition: 'FooterLanguage', show_globe_icon: false, custom_class: 'language-selector__disclosure' -%}
                   </div>
                 {%- endform -%}
               </localization-form>
@@ -550,3 +550,15 @@
   }
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'language-localization', localPosition: 'FooterLanguage', , show_globe_icon:
+    false, custom_class: 'language-selector__disclosure' -%}"
+  to: "{%- render 'language-localization', localPosition: 'FooterLanguage', show_globe_icon:
+    false, custom_class: 'language-selector__disclosure' -%}"
+  position: 11605..11747
+{% endcomment %}
